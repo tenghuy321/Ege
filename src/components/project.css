@@ -1,0 +1,110 @@
+/* project and activity */
+.swiper-activity .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-project .swiper{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.swiper-activity .swiper-slide,
+.swiper-project .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-activity .swiper-pagination .swiper-pagination-bullet{
+    background-color: #A4CA62;
+    width: 6px;
+    height: 4px;
+    border-radius: 10px;
+}
+
+.swiper-project .swiper-pagination .swiper-pagination-bullet{
+  background-color: #415464;
+  width: 6px;
+  height: 4px;
+  border-radius: 10px;
+}
+
+.swiper-activity .swiper-pagination .swiper-pagination-bullet-active{
+    background-color: #A4CA62;
+    width: 12px;
+    height: 4px;
+    border-radius: 10px;
+}
+.swiper-project .swiper-pagination .swiper-pagination-bullet-active{
+  background-color: #415464;
+  width: 12px;
+  height: 4px;
+  border-radius: 10px;
+}
+
+/* client */
+@keyframes scrollleft{
+  to{
+      left: -200px;
+  }
+}
+
+@keyframes scrollRight{
+  to{
+    right: -200px;
+  }
+}
+
+.client_item,
+.partner_item {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: max(calc(200px * 9), 100%);
+  animation: scrollleft 30s linear infinite;
+}
+.network_item,
+.supply_item{
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  right: max(calc(200px * 9), 100%);
+  animation: scrollRight 30s linear infinite;
+}
+
+
+.item1{
+  animation-delay: calc(30s / 9 * (9 - 1) * -1);
+}
+.item2{
+  animation-delay: calc(30s / 9 * (9 - 2) * -1);
+}
+.item3{
+  animation-delay: calc(30s / 9 * (9 - 3) * -1);
+}
+.item4{
+  animation-delay: calc(30s / 9 * (9 - 4) * -1);
+}
+.item5{
+  animation-delay: calc(30s / 9 * (9 - 5) * -1);
+}
+.item6{
+  animation-delay: calc(30s / 9 * (9 - 6) * -1);
+}
+.item7{
+  animation-delay: calc(30s / 9 * (9 - 7) * -1);
+}
+.item8{
+  animation-delay: calc(30s / 9 * (9 - 8) * -1);
+}
+.item9{
+  animation-delay: calc(30s / 9 * (9 - 9) * -1);
+}
+
+
+
+
+

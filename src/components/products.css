@@ -1,0 +1,27 @@
+.swiper-products .swiper{
+  margin-inline: initial;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+.swiper-products .swiper-pagination {
+  position: absolute !important;
+  bottom: 0 !important;
+  width: 100%;
+  text-align: center;
+}
+
+.swiper-products .swiper-pagination .swiper-pagination-bullet {
+    background-color: #a4ca62;
+    width: 10px;
+    height: 6px;
+    border-radius: 10px;
+    margin: 0 5px;
+}
+
+.swiper-products .swiper-pagination .swiper-pagination-bullet-active {
+    width: 16px;
+    height: 6px;
+    background-color: #a4ca62;
+  }
+  

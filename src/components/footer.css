@@ -1,0 +1,24 @@
+.nav_list {
+    position: relative;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.nav_list:hover {
+    transform: translateX(4px); 
+}
+
+.nav_list::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #A4CA62;
+    transition: all 0.5s;
+}
+
+.nav_list:hover::after {
+    width: 100%; 
+}
