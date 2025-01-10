@@ -4,8 +4,6 @@ import about_bg4 from '../assets/images/about/about-bg-4.png';
 import Home from "./Home";
 import Footer from "./Footer";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 const Career = () => {
   return (
     <section>
@@ -13,8 +11,8 @@ const Career = () => {
       <div id="careers" className="w-full h-[60vh] sm:min-h-screen bg-center bg-cover px-4 relative overflow-hidden" style={{ backgroundImage: `url(${careerBg})` }}>
         <hr className="h-4 bg-[#A4CA62] border-none max-w-7xl mx-auto" />
         <div className="absolute w-full px-4 left-1/2 -translate-x-1/2 sm:-translate-x-0 sm:left-[50px] top-[50px] sm:top-[70px] xl:left-[120px] xl:top-[100px]">
-          <motion.hr variants={fadeIn('right', 0.2)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="h-2 bg-[#A4CA62] border-none w-[80%] sm:max-w-[400px]" />
-          <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="py-6 px-4 sm:px-10 sm:max-w-[500px] lg:max-w-[600px] bg-[#2B4452]/95 bg-blend-multiply">
+          <hr data-aos='fade-right' data-aos-duration='1200' className="h-2 bg-[#A4CA62] border-none w-[80%] sm:max-w-[400px]" />
+          <div data-aos='fade-right' data-aos-duration='1200' className="py-6 px-4 sm:px-10 sm:max-w-[500px] lg:max-w-[600px] bg-[#2B4452]/95 bg-blend-multiply">
             <h1 className="text-[30px] md:text-[40px] text-[#ffffff] font-[700]">Our Culture</h1>
             <p className="text-[20px] sm:text-[25px] md:text-[30px] lg:text-[40px] text-[#A4CA62] font-[700] py-4 lg:py-6 leading-none">Let’s build greener world together with us</p>
             <p className="text-[16px] md:text-[20px] text-[#ffffff]">Apply your dream job today!</p>
@@ -27,7 +25,7 @@ const Career = () => {
                 <p className="text-[12px] sm:text-[14px] font-[700]">vc-raksmey@egecambodia.com</p>
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 
@@ -35,10 +33,10 @@ const Career = () => {
       <div className='w-full h-full relative mt-4'>
         <img src={about_bg4} alt="" className='w-full h-full' />
         <div className='absolute inset-0 w-full h-full bg-[#000000]/70 bg-blend-multiply'></div>
-        <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
+        <div data-aos='fade-up' data-aos-duration='1200' className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
           Innovation meets <br />
           sustainability.
-        </motion.div>
+        </div>
       </div>
 
       <Footer />

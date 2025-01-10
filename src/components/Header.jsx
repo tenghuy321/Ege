@@ -1,26 +1,41 @@
-import { useState } from "react"
-import { NavLink } from "react-router-dom"
-import { FaTimes, FaBars } from "react-icons/fa"
-// import logo from '../assets/images/logo.png'
+import { useState } from "react";
+import { Button, Drawer } from "flowbite-react";
 import Logo from "./logo"
-// import { use } from "react"
-const Header = () => {
-    const [isOpen, setIsOpen] = useState(false)
-    const toggleMenu = () => {
-        setIsOpen(!isOpen)
-    }
+import { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
+import logo from '../assets/images/logo.png';
+const Header = () => {
+    const [isOpen, setIsOpen] = useState(true);
+    const location = useLocation();
+    const [isAboutDropdownOpen, setIsAboutDropdownOpen] = useState(false);
+    const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
+    const [isServicesDropdownOpen, setIsServicesDropdownOpen] = useState(false);
+    const [isCareerDropdownOpen, setIsCareerDropdownOpen] = useState(false);
+    const [isProjectDropdownOpen, setIsProjectDropdownOpen] = useState(false);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
+    }, [isOpen]);
+
+    useEffect(() => {
+        setIsOpen(false); // Close the drawer when the route changes
+    }, [location]);
     return (
         <header>
             <div className="relative px-[1rem] w-full h-[74px] items-center gap-[1rem] flex justify-between bg-[#D9ECEE] z-10 lg:hidden">
-                <Logo/>
-                <div className="flex items-center">
+                <Logo />
+                {/* <div className="flex items-center">
                     <nav
-                            className={`fixed top-0 left-0 h-full w-full bg-[#415464] text-white z-50 transform ${
-                                isOpen ? "translate-y-0" : "-translate-y-full"
+                            className={`fixed top-0 left-0 h-full w-full bg-[#415464] text-white z-[-1] transform ${
+                                isOpen ? "translate-y-0 top-20" : "-translate-y-full"
                             } transition-transform duration-300 lg:hidden`}
                         >
-                        <div className="h-full ">
+                        <div className="h-full">
                             <div className="p-5"> 
                                 <Logo/>
                             </div>
@@ -31,7 +46,7 @@ const Header = () => {
                                         to="/"
                                         onClick={toggleMenu}
                                         className={({ isActive }) =>
-                                            isActive ? "text-[#A4CA62] font-bold" : "text-white"
+                                            isActive ? "text-[#A4CA62] font-bold bg-[#000000]/50" : "text-white"
                                         }
                                     >
                                         Home
@@ -121,9 +136,200 @@ const Header = () => {
                         className="relative z-50 lg:hidden"
                         onClick={toggleMenu}
                     >
-                        {isOpen ? <FaTimes className="fixed right-4 top-6 text-white" size={22} /> : <FaBars size={22} />}
+                        {isOpen ? <FaTimes size={22} /> : <FaBars size={22} />}
                     </button>
+                </div> */}
+
+                <div className="flex min-h-[50vh] items-center justify-center">
+                    <Button onClick={() => setIsOpen(true)} className="group relative flex items-stretch justify-center p-0.5 text-center font-medium bg-transparent transition-[color,background-color,border-color,text-decoration-color,fill,stroke,box-shadow] focus:z-10 border border-transparent text-white focus:ring-0 focus:bg-transparent enabled:hover:bg-transparent rounded-lg focus:outline-none">
+                        <svg width="20" height="20" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M60.9741 138.583H96.3593C119.641 138.583 138.583 119.641 138.583 96.3593V60.9741C138.583 37.6923 119.641 18.75 96.3593 18.75H60.9741C37.6923 18.75 18.75 37.6923 18.75 60.9741V96.3593C18.75 119.641 37.6923 138.583 60.9741 138.583ZM37.5 60.9741C37.5 48.0286 48.0286 37.5 60.9741 37.5H96.3593C109.305 37.5 119.833 48.0286 119.833 60.9741V96.3593C119.833 109.305 109.305 119.833 96.3593 119.833H60.9741C48.0286 119.833 37.5 109.305 37.5 96.3593V60.9741Z" fill="#A3C962" />
+                            <path d="M239.026 18.75H203.641C180.359 18.75 161.417 37.6923 161.417 60.9741V96.3593C161.417 119.641 180.359 138.583 203.641 138.583H239.026C262.308 138.583 281.25 119.641 281.25 96.3593V60.9741C281.25 37.6923 262.308 18.75 239.026 18.75ZM262.5 96.3593C262.5 109.305 251.972 119.833 239.026 119.833H203.641C190.696 119.833 180.167 109.305 180.167 96.3593V60.9741C180.167 48.0286 190.696 37.5 203.641 37.5H239.026C251.972 37.5 262.5 48.0286 262.5 60.9741V96.3593Z" fill="#A3C962" />
+                            <path d="M60.9741 281.25H96.3593C119.641 281.25 138.583 262.308 138.583 239.026V203.641C138.583 180.359 119.641 161.417 96.3593 161.417H60.9741C37.6923 161.417 18.75 180.359 18.75 203.641V239.026C18.75 262.308 37.6923 281.25 60.9741 281.25ZM37.5 203.641C37.5 190.696 48.0286 180.167 60.9741 180.167H96.3593C109.305 180.167 119.833 190.696 119.833 203.641V239.026C119.833 251.972 109.305 262.5 96.3593 262.5H60.9741C48.0286 262.5 37.5 251.972 37.5 239.026V203.641Z" fill="#A3C962" />
+                            <path d="M221.338 161.417C188.297 161.417 161.417 188.297 161.417 221.338C161.417 254.37 188.297 281.25 221.338 281.25C254.37 281.25 281.25 254.37 281.25 221.338C281.25 188.297 254.37 161.417 221.338 161.417ZM221.338 262.5C198.633 262.5 180.167 244.034 180.167 221.338C180.167 198.633 198.633 180.167 221.338 180.167C244.034 180.167 262.5 198.633 262.5 221.338C262.5 244.034 244.034 262.5 221.338 262.5Z" fill="#A3C962" />
+                        </svg>
+                    </Button>
                 </div>
+                <Drawer open={isOpen} onClose={() => setIsOpen(false)} position="left" className="p-0 transform transition-all duration-500 ease-in-out">
+                    <div className="flex justify-between items-center p-4">
+                        <img src={logo} alt="" className="w-20" />
+                        <button onClick={() => setIsOpen(false)} className="text-[#A3C962] focus:outline-none">
+                            <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <hr className="h-1 bg-[#A3C962]" />
+                    <Drawer.Items className="p-4">
+                        <ul className="flex flex-col items-start justify-start space-y-5 pt-6 p-5">
+                            <li className="w-full">
+                                <NavLink to="/" onClick={() => setIsOpen(false)}
+                                    className={({ isActive }) => isActive ? "text-[#415464] font-bold w-full block" : "text-[#415464]"}>
+                                    Home
+                                </NavLink>
+                            </li>
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/about" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#415464] font-bold w-full block" : "text-[#415464]"}>
+                                        About
+                                    </NavLink>
+                                    <button onClick={() => setIsAboutDropdownOpen(!isAboutDropdownOpen)}
+                                        className={`transition-transform duration-500`}
+                                        style={{ transform: isAboutDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
+
+                                        <svg className="w-4 h-4 text-[#415464]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
+                                    ${isAboutDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="ml-4 mt-2">
+                                        <ul>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#vision" className="mt-1 text-[14px] text-[#415464]">Vision</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#mission" className="mt-1 text-[14px] text-[#415464]">Mission</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#core_values" className="mt-1 text-[14px] text-[#415464]">Core Values</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#history" className="mt-1 text-[14px] text-[#415464]">Our History</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#management_team" className="mt-1 text-[14px] text-[#415464]">Management Team</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#registration_docs" className="mt-1 text-[14px] text-[#415464]">Registration Docs</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/about#certificate" className="mt-1 text-[14px] text-[#415464]">Certificate of Auth</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/products" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
+                                        Products
+                                    </NavLink>
+                                    <button onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
+                                        className={`transition-transform duration-500`}
+                                        style={{ transform: isProductsDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
+
+                                        <svg className="w-4 h-4 text-[#415464]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
+                                    ${isProductsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="ml-4 mt-2">
+                                        <ul>
+                                            <li><a onClick={() => setIsOpen(false)} href="/products#product" className="text-[14px] text-[#415464]">Products</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/products#reason" className="text-[14px] text-[#415464]">6 Reason to choose</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/services" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
+                                        Services
+                                    </NavLink>
+                                    <button onClick={() => setIsServicesDropdownOpen(!isServicesDropdownOpen)}
+                                        className={`transition-transform duration-500`}
+                                        style={{ transform: isServicesDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
+
+                                        <svg className="w-4 h-4 text-[#415464]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
+                                    ${isServicesDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="ml-4 mt-2">
+                                        <ul>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Consultant</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Feasibility Studies</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Installation</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Site Survey</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Project Management</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Maintenance</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Pump / Irrigation</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Agriculture</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Home</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Farm & Rooftop</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/career" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
+                                        Career
+                                    </NavLink>
+                                    <button onClick={() => setIsCareerDropdownOpen(!isCareerDropdownOpen)}
+                                        className={`transition-transform duration-500`}
+                                        style={{ transform: isCareerDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
+
+                                        <svg className="w-4 h-4 text-[#415464]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
+                                    ${isCareerDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="ml-4 mt-2">
+                                        <ul>
+                                            <li><a onClick={() => setIsOpen(false)} href="/career#careers" className="text-[14px] text-[#415464]">Careers</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <NavLink to="/events" onClick={() => setIsOpen(false)}
+                                    className={({ isActive }) => isActive ? "text-[#415464] font-bold w-full block" : "text-[#415464]"}>
+                                    Events
+                                </NavLink>
+                            </li>
+
+                            <li className="w-full">
+                                <div className="flex items-center justify-between w-full">
+                                    <NavLink to="/project" onClick={() => setIsOpen(false)}
+                                        className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
+                                        Project
+                                    </NavLink>
+                                    <button onClick={() => setIsProjectDropdownOpen(!isProjectDropdownOpen)}
+                                        className={`transition-transform duration-500`}
+                                        style={{ transform: isProjectDropdownOpen ? 'rotate(225deg)' : 'rotate(0deg)' }}>
+
+                                        <svg className="w-4 h-4 text-[#415464]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14m-7 7V5" />
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div className={`transition-all duration-500 ease-in-out overflow-hidden 
+                                    ${isProjectDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
+                                    <div className="ml-4 mt-2">
+                                        <ul>
+                                            <li><a onClick={() => setIsOpen(false)} href="/project#activities" className="text-[14px] text-[#415464]">Activities</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/project#project" className="text-[14px] text-[#415464]">Project Credentials</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li className="w-full">
+                                <NavLink to="/contact" onClick={() => setIsOpen(false)}
+                                    className={({ isActive }) => isActive ? "text-[#415464] font-bold w-full block" : "text-[#415464]"}>
+                                    Contact Us
+                                </NavLink>
+                            </li>
+
+
+                        </ul>
+                    </Drawer.Items>
+                </Drawer>
+
+
             </div>
 
             <section className="w-full bg-[#D9ECEE] hidden lg:block">

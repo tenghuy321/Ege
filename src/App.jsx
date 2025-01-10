@@ -1,17 +1,16 @@
-import { Route, Routes, useLocation } from "react-router-dom"
-import Header from "./components/Header"
-import Home from "./components/Home"
-import About from "./components/About"
-import Products from "./components/Products"
-import Services from "./components/Services"
-import Career from "./components/Career"
-import Project from "./components/Project"
-import Contact from "./components/Contact"
-import Navbar from "./components/Navbar"
-import Events from "./components/Events"
-import { useEffect, useState } from "react"
-import Loading from "./components/Loading"
-
+import { Route, Routes, useLocation } from "react-router-dom";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import About from "./components/About";
+import Products from "./components/Products";
+import Services from "./components/Services";
+import Career from "./components/Career";
+import Project from "./components/Project";
+import Contact from "./components/Contact";
+import Navbar from "./components/Navbar";
+import Events from "./components/Events";
+import { useEffect, useState } from "react";
+import Loading from "./components/Loading";
 function App() {
 
   const [isLoading, setIsLoading] = useState(false);

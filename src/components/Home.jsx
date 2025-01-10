@@ -3,18 +3,18 @@
 import banner from '../assets/images/banner-1.png'
 // import { fadeIn } from '../variants';
 import { useEffect } from 'react';
-import AOS from 'aos';
+import Aos from 'aos';
 import ButtonScroll from './ButtonScroll';
 import { useLocation } from 'react-router-dom';
 // import Loading from './Loading';
 const Home = () => {
     useEffect(() => {
-        AOS.init({
+        Aos.init({
             offset: 100, 
             easing: 'ease-in-out',
             once: false,
         });
-        AOS.refresh();
+        // Aos.refresh();
     })
 
     // submenu change to page only (hash) get href
@@ -28,7 +28,7 @@ const Home = () => {
       }
     }, [hash]);
   return (
-    <section className="w-full bg-[#D9ECEE] min-h-screen flex overflow-hidden">
+    <section className="w-full bg-[#D9ECEE] min-h-screen flex overflow-hidden z-10">
       <div>
         <ButtonScroll />
       </div>

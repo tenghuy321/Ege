@@ -67,8 +67,6 @@ import icons4 from '../assets/images/projects/icons/icon-4.png';
 import icons5 from '../assets/images/projects/icons/icon-5.png';
 
 import about_bg4 from '../assets/images/about/about-bg-4.png';
-import { motion } from 'framer-motion';
-import { fadeIn } from '../variants';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import '../components/project.css';
@@ -333,11 +331,11 @@ const Project = () => {
         <div className="max-w-7xl mx-auto px-4">
           <hr className='h-4 bg-[#A4CA62] border-none' />
           <div className='py-10 md:py-20'>
-            <h1 className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Case <br /> Studies/Activities</h1>
+            <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Case <br /> Studies/Activities</h1>
             {/* laptop */}
             <div className="hidden md:grid grid-cols-3 xl:grid-cols-4 gap-4">
               {activity.map((activities, index) => (
-                <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} key={index} className="relative group overflow-hidden">
+                <div data-aos='flip-up' data-aos-duration='1200' key={index} className="relative group overflow-hidden">
                   <hr className='h-2 bg-[#A4CA62] border-none' />
                   <img src={activities.image} alt="" className='w-full h-full object-cover' />
                   <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
@@ -355,7 +353,7 @@ const Project = () => {
                       )}
                     </p>
                   </div>
-                </motion.div>
+                </div>
               ))}
             </div>
 
@@ -402,11 +400,11 @@ const Project = () => {
 
       {/* Project Credentials */}
       <div id='project' className='max-w-7xl mx-auto px-4 py-10'>
-        <h1 className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Project <br /> Credentials</h1>
+        <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Project <br /> Credentials</h1>
         {/* laptop */}
         <div className='hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4'>
           {project.map((projects, index) => (
-            <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} key={index}>
+            <div data-aos='fade-right' data-aos-duration='1200' key={index}>
               <img src={projects.image} alt="" className='w-full h-auto' />
               <hr className='h-2 bg-[#A4CA62] border-none' />
               <div className='bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]'>
@@ -417,7 +415,7 @@ const Project = () => {
                 ))
                 }
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
 
@@ -453,7 +451,7 @@ const Project = () => {
 
       {/* clients */}
       <div className='max-w-7xl mx-auto px-4'>
-        <h1 className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Clients</h1>
+        <h1 data-aos='fade-right' data-aos-duration='1200' className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Clients</h1>
         <div className="h-[200px] w-full max-w-7xl mx-auto relative overflow-hidden">
           {client.map((clients, index) => (
             <div key={index} className={`client_item item${index + 1} flex items-center justify-center`}>
@@ -463,7 +461,7 @@ const Project = () => {
         </div>
 
         {/* network */}
-        <h1 className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Networks</h1>
+        <h1 data-aos='fade-right' data-aos-duration='1200' className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Networks</h1>
         <div className="h-[200px] w-full max-w-7xl mx-auto relative overflow-hidden">
           {network.map((networks, index) => (
             <div key={index} className={`network_item item${index + 1} flex items-center justify-center`}>
@@ -473,7 +471,7 @@ const Project = () => {
         </div>
 
         {/* partner */}
-        <h1 className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Partner</h1>
+        <h1 data-aos='fade-right' data-aos-duration='1200' className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Partner</h1>
         <div className="h-[200px]  w-full max-w-7xl mx-auto relative overflow-hidden">
           {partner.map((partners, index) => (
             <div key={index} className={`partner_item item${index + 1} flex items-center justify-center`}>
@@ -483,7 +481,7 @@ const Project = () => {
         </div>
 
         {/* supplies */}
-        <h1 className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Suppliers</h1>
+        <h1 data-aos='fade-right' data-aos-duration='1200' className='text-[25px] md:text-[30px] text-[#415464] font-[700]'>Our Suppliers</h1>
         <div className="h-[200px]  w-full max-w-7xl mx-auto relative overflow-hidden">
           {supply.map((supplies, index) => (
             <div key={index} className={`supply_item item${index + 1} flex items-center justify-center`}>
@@ -497,50 +495,45 @@ const Project = () => {
       {/*  */}
       <div className='w-full bg-[#D9ECEE]'>
         <div className='max-w-7xl mx-auto py-10 md:py-20 px-4'>
-          <h2 className='text-[20px] md:text-[30px] font-[400] text-[#415464]'>Long-term project sustainability Project contributions to Climate <br /> Change Mitigation and SDGs</h2>
+          <h2 data-aos='fade-right' data-aos-duration='1000' className='text-[20px] md:text-[30px] font-[400] text-[#415464]'>Long-term project sustainability Project contributions to Climate <br /> Change Mitigation and SDGs</h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-10 md:gap-y-20 py-10'>
-            <motion.div variants={fadeIn('right', 0.2)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
-              className='flex flex-col sm:flex-row items-start sm:space-x-4'>
+            <div data-aos='fade-right' data-aos-duration='1200' className='flex flex-col sm:flex-row items-start sm:space-x-4'>
               <img src={icons1} alt="" className='w-32' />
               <div className='text-[12px] p-2 sm:p-0'>
                 <p>Provided Solar technologies for sustainable agriculture practice</p>
                 <p className='mt-2'>Reduce cost from</p>
               </div>
-            </motion.div>
-            <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
-              className='flex flex-col sm:flex-row items-start sm:space-x-4'>
+            </div>
+            <div data-aos='fade-right' data-aos-duration='1400' className='flex flex-col sm:flex-row items-start sm:space-x-4'>
               <img src={icons2} alt="" className='w-32' />
               <div className='text-[12px] p-2 sm:p-0'>
                 <p>Convenience for women to access solar water pump</p>
                 <p className='mt-2'>4 +50% of women in agriculture practice</p>
               </div>
-            </motion.div>
-            <motion.div variants={fadeIn('right', 0.4)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
-              className='flex flex-col sm:flex-row items-start sm:space-x-4'>
+            </div>
+            <div data-aos='fade-right' data-aos-duration='1600' className='flex flex-col sm:flex-row items-start sm:space-x-4'>
               <img src={icons3} alt="" className='w-32' />
               <div className='text-[12px] p-2 sm:p-0'>
                 <p>Water governance</p>
                 <p className='mt-2'>Increase rice field productions 20% to 25% per hectare</p>
               </div>
-            </motion.div>
-            <motion.div variants={fadeIn('right', 0.2)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
-              className='flex flex-col sm:flex-row items-start sm:space-x-4'>
+            </div>
+            <div data-aos='fade-right' data-aos-duration='1200' className='flex flex-col sm:flex-row items-start sm:space-x-4'>
               <img src={icons4} alt="" className='w-32' />
               <div className='text-[12px] p-2 sm:p-0'>
                 <p>Increase job opportunities for communities through farming and cropping</p>
                 <p className='mt-2'>Reduce migration</p>
                 <p className='mt-2'>Become a green community with abundant agriculture and clean energy sources</p>
               </div>
-            </motion.div>
-            <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}
-              className='flex flex-col sm:flex-row items-start sm:space-x-4'>
+            </div>
+            <div data-aos='fade-right' data-aos-duration='1400' className='flex flex-col sm:flex-row items-start sm:space-x-4'>
               <img src={icons5} alt="" className='w-32' />
               <div className='text-[12px] p-2 sm:p-0'>
                 <p>Reduce carbon emission 134 tons/year </p>
                 <p className='mt-2'>SWITCH from diesel engine to solar technologies.</p>
                 <p className='mt-2'>Promote clean energy and environmental friendly</p>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
@@ -549,10 +542,10 @@ const Project = () => {
       <div className='w-full h-full relative mt-4'>
         <img src={about_bg4} alt="" className='w-full h-full' />
         <div className='absolute inset-0 w-full h-full bg-[#000000]/70 bg-blend-multiply'></div>
-        <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
+        <div data-aos='fade-up' data-aos-duration='1200' className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
           Innovation meets <br />
           sustainability.
-        </motion.div>
+        </div>
       </div>
 
 

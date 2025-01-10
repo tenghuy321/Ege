@@ -7,9 +7,6 @@ import service2 from '../assets/images/services/service-2.png';
 import service3 from '../assets/images/services/service-3.png';
 import { useState } from "react";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
-
 const Services = () => {
   const [visibleSections, setVisibleSections] = useState({});
 
@@ -25,9 +22,9 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4">
         <hr className="h-4 bg-[#A4CA62] border-none" />
         <div className="px-0 py-4 md:p-5">
-          <h1 className="text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700]">Our Services</h1>
+          <h1 data-aos='fade-right' data-aos-duration='1000' className="text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700]">Our Services</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <motion.div variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}>
+            <div data-aos='fade-right' data-aos-duration='1200'>
               <img src={service1} alt="Service 1" />
               <div className="flex flex-col md:flex-row items-start bg-[#415464] py-2 px-6 leading-none">
                 <h1 className="text-[80px] lg:text-[100px] font-[700] text-[#ffffff] p-0 m-0 leading-none tracking-tight">01</h1>
@@ -52,8 +49,8 @@ const Services = () => {
                   </button>
                 </div>
               </div>
-            </motion.div>
-            <motion.div variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}>
+            </div>
+            <div data-aos='fade-left' data-aos-duration='1200'>
               <img src={service2} alt="Service 1" />
               <div className="flex flex-col md:flex-row items-start bg-[#415464] py-2 px-6 leading-none">
                 <h1 className="text-[80px] lg:text-[100px] font-[700] text-[#ffffff] p-0 m-0 leading-none tracking-tight">02</h1>
@@ -77,8 +74,8 @@ const Services = () => {
                   </button>
                 </div>
               </div>
-            </motion.div>
-            <motion.div className="md:col-span-2" variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }}>
+            </div>
+            <div className="md:col-span-2" data-aos='fade-right' data-aos-duration='1200'>
               <img src={service3} alt="Service 1" />
               <div className="flex flex-col md:flex-row items-start bg-[#415464] py-2 px-6">
                 <h1 className="text-[80px] lg:text-[100px] font-[700] text-[#ffffff] p-0 m-0 leading-none tracking-tight">03</h1>
@@ -107,7 +104,7 @@ const Services = () => {
                   </button>
                 </div>
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
@@ -116,10 +113,10 @@ const Services = () => {
       <div className='w-full h-full relative mt-4'>
         <img src={about_bg4} alt="" className='w-full h-full' />
         <div className='absolute inset-0 w-full h-full bg-[#000000]/70 bg-blend-multiply'></div>
-        <motion.div variants={fadeIn('up', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
+        <div data-aos='fade-up' data-aos-duration='1200' className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
           Innovation meets <br />
           sustainability.
-        </motion.div>
+        </div>
       </div>
 
 
