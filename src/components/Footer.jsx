@@ -41,10 +41,10 @@ const Footer = () => {
             <div className='flex flex-col space-y-4 text-[14px] text-[#415464]'>
               <div className='flex items-start space-x-1'>
                 <div>
-                  <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                  {/* <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
-                  </svg>
+                  </svg> */}
 
                 </div>
                 <p>Borey Chip Mong 271, #117, St Commercial, Sangkat Chak Agre Leu,Khan Mean Chey, Phnom Penh, Cambodia</p>
