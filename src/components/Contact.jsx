@@ -2,7 +2,7 @@ import Home from "./Home";
 import { NavLink } from "react-router-dom";
 
 import Logo from "../assets/images/logo.png";
-
+import '../components/footer.css';
 const Contact = () => {
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -25,14 +25,14 @@ const Contact = () => {
             <div className="col-span-5 sm:col-span-4 lg:col-span-3">
               <h1 className='text-[#A4CA62] text-[18px] font-[700]'>Infomation</h1>
               <ul className='text-[14px] text-[#415464] flex flex-col space-y-1'>
-                <li><NavLink onClick={scrollTop} to='/'>Home</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/about'>About Us</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/products'>Products</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/services'>Services</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/career'>Career</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/events'>Events</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/project'>Project</NavLink></li>
-                <li><NavLink onClick={scrollTop} to='/contact'>Contact Us</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/'>Home</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/about'>About Us</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/products'>Products</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/services'>Services</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/career'>Career</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/events'>Events</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/project'>Project</NavLink></li>
+              <li><NavLink onClick={scrollTop} className={({ isActive }) => `nav_list ${isActive ? 'font-bold' : ''}`} to='/contact'>Contact Us</NavLink></li>
               </ul>
 
               <h1 className='text-[#A4CA62] text-[18px] font-[700] pt-10'>Follow Us</h1>

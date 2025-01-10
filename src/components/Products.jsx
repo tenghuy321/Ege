@@ -13,7 +13,7 @@ import products8 from '../assets/images/products/products-8.png';
 import products9 from '../assets/images/products/products-9.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
@@ -115,7 +115,8 @@ const Products = () => {
                 slideShadows: false,
               }}
               pagination={{ clickable: true }}
-              modules={[EffectCoverflow, Pagination]}
+              modules={[EffectCoverflow,Autoplay, Pagination]}
+              autoplay
               style={{ width: '80%', height: 'auto', margin: 'auto' }}
             >
 

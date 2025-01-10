@@ -40,27 +40,21 @@ const Footer = () => {
             <h1 className='text-[#A4CA62] text-[18px] font-[700]'>Keep In Touch</h1>
             <div className='flex flex-col space-y-4 text-[14px] text-[#415464]'>
               <div className='flex items-start space-x-1'>
-                <div>
-                  {/* <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
-                  </svg> */}
-
-                </div>
+                {/* <div>
+                  <img src={image1} alt="" className='w-16' />
+                </div> */}
                 <p>Borey Chip Mong 271, #117, St Commercial, Sangkat Chak Agre Leu,Khan Mean Chey, Phnom Penh, Cambodia</p>
               </div>
               <div className='flex items-start space-x-1'>
-                <div>
-                  <svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M15.4167 0H4.58333C3.36816 0.00122722 2.20314 0.449388 1.34389 1.24615C0.484634 2.04292 0.00132347 3.12321 0 4.25L0 12.75C0.00132347 13.8768 0.484634 14.9571 1.34389 15.7538C2.20314 16.5506 3.36816 16.9988 4.58333 17H15.4167C16.6318 16.9988 17.7969 16.5506 18.6561 15.7538C19.5154 14.9571 19.9987 13.8768 20 12.75V4.25C19.9987 3.12321 19.5154 2.04292 18.6561 1.24615C17.7969 0.449388 16.6318 0.00122722 15.4167 0ZM15.4167 2.31818C15.9221 2.31974 16.4092 2.49324 16.7858 2.80577L11.3692 7.8285C11.0013 8.15433 10.5121 8.33615 10.0033 8.33615C9.49458 8.33615 9.0054 8.15433 8.6375 7.8285L3.22083 2.80577C3.59571 2.49465 4.08025 2.32125 4.58333 2.31818H15.4167ZM15.4167 14.6818H4.58333C4.0308 14.6818 3.5009 14.4783 3.11019 14.116C2.71949 13.7537 2.5 13.2623 2.5 12.75V5.42223L6.86583 9.47055C7.2773 9.85225 7.76584 10.155 8.30353 10.3616C8.84123 10.5682 9.41756 10.6746 9.99958 10.6746C10.5816 10.6746 11.1579 10.5682 11.6956 10.3616C12.2333 10.155 12.7219 9.85225 13.1333 9.47055L17.5 5.42223V12.75C17.5 13.2623 17.2805 13.7537 16.8898 14.116C16.4991 14.4783 15.9692 14.6818 15.4167 14.6818Z" fill="#415464" />
-                  </svg>
-                </div>
+                {/* <div>
+                  <img src={image2} alt="" className='w-6' />
+                </div> */}
                 <a href='#'>info@egecambodia.com</a>
               </div>
               <div className='flex items-start space-x-1'>
-                <div>
-
-                </div>
+                {/* <div>
+                  <img src={image3} alt="" className='w-6' />
+                </div> */}
                 <a href='#'>(+855) 078 256 088</a>
               </div>
             </div>

@@ -200,7 +200,7 @@ const About = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
-              modules={[Navigation, Pagination]}
+              modules={[Navigation,Autoplay, Pagination]}
               navigation={{
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
@@ -210,12 +210,13 @@ const About = () => {
                 clickable: true,
               }}
               loop={true}
+              autoplay
             >
               {[icon1, icon2, icon3, icon4, icon5].map((icon, index) => (
                 <SwiperSlide key={index}>
                   <div className='relative transition-all duration-500'>
                     <div className='flex flex-col md:flex-row md:space-x-4 items-center px-4'>
-                      <img src={icon} alt="" className='w-20 h-20' />
+                      <img src={icon} alt="" className='w-20 h-[85px]' />
                       <div className='w-full'>
                         <div className='flex items-center justify-between'>
                           <h1 className='text-[20px] xl:text-[30px] font-bold text-[#ffffff]'>
@@ -277,8 +278,7 @@ const About = () => {
             slidesPerView='auto'
             loop={true}
             coverflowEffect={{ rotate: 0, stretch: 0, depth: 200, modifier: 1, slideShadows: false }}
-            pagination={true} modules={[Pagination, Autoplay, EffectCoverflow]}
-            autoplay
+            pagination={true} modules={[Pagination, EffectCoverflow]}
           >
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
