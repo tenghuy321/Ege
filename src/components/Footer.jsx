@@ -13,7 +13,7 @@ const Footer = () => {
         <hr className="h-[10px] sm:h-[20px] bg-[#A4CA62] border-none" />
         <div className="grid grid-cols-1 sm:grid-cols-12 items-start gap-10 py-10">
           <div className="sm:col-span-6 md:col-span-4 lg:col-span-2">
-            <img src={Logo} alt="" className='w-full h-full' />
+            <img src={Logo} alt="" className='w-32 sm:w-full sm:h-full' />
           </div>
           <div className='sm:col-span-6 md:col-span-4 lg:col-span-3 text-[13px] text-[#415464]'>
             <h1 className='text-[#A4CA62] text-[18px] font-[700] leading-none'>EGE Cambodia Energy Solutions.</h1>
