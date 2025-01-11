@@ -5,8 +5,6 @@ import about_bg4 from '../assets/images/about/about-bg-4.png';
 import event from "../assets/images/events/events.png";
 import eventIcon from "../assets/images/events/events_icon.png";
 
-import { motion } from "framer-motion";
-import { fadeIn } from "../variants";
 const Events = () => {
   return (
     <section>
@@ -14,8 +12,8 @@ const Events = () => {
       <div className="max-w-7xl mx-auto px-4">
         <hr className="h-4 bg-[#A4CA62] border-none max-w-7xl mx-auto" />
         <div className="grid grid-cols-1 md:grid-cols-2">
-          <motion.img variants={fadeIn('right', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} src={event} alt="" className="w-full h-full" />
-          <motion.div variants={fadeIn('left', 0.3)} initial='hidden' whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className="bg-[#374E5D] p-3 md:p-5">
+          <img data-aos='fade-right' data-aos-duration='1500' src={event} alt="" className="w-full h-full" />
+          <div data-aos='fade-left' data-aos-duration='1500' className="bg-[#374E5D] p-3 md:p-5">
             <div className="flex items-center space-x-3 text-[20px] text-[#ffffff]">
               <img src={eventIcon} alt="" className="w-10" />
               <p className="underline">អាជ្ញាធរអគ្គិសនីកម្ពុជា</p>
@@ -39,7 +37,7 @@ const Events = () => {
                 នាថ្ងៃព្រហស្បតិ៍ ១១រោច ខែមិគសិរ ឆ្នាំរោង... - អាជ្ញាធរអគ្គិសនីកម្ពុជា | Facebook
               </a>
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
 

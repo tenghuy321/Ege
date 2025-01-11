@@ -32,7 +32,7 @@ const Services = () => {
                   <h1 className="text-[16px] md:text-[20px] lg:text-[25px] font-[700] leading-none h-auto md:h-[50px] lg:h-[30px]">Feasibility Studies & Site Survey</h1>
                   <p className="pt-2 h-auto md:h-[70px] font-[300] leading-4">
                     We begin every project with a thorough feasibility study and site survey to ensure optimal results.
-                    Our team evaluates the technical, environmental, and financial aspects of implementing solar solutions...
+                    Our team evaluates the technical, environmental, and financial aspects of implementing solar solutions.
                   </p>
 
                   {visibleSections[1] && (

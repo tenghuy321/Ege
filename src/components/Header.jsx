@@ -219,7 +219,7 @@ const Header = () => {
                                     <div className="ml-4 mt-2">
                                         <ul>
                                             <li><a onClick={() => setIsOpen(false)} href="/products#product" className="text-[14px] text-[#415464]">Products</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/products#reason" className="text-[14px] text-[#415464]">6 Reason to choose</a></li>
+                                            <li><a onClick={() => setIsOpen(false)} href="/products#reason" className="text-[14px] text-[#415464]">6 Reason to choose us</a></li>
                                         </ul>
                                     </div>
                                 </div>

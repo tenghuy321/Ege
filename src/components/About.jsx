@@ -31,7 +31,7 @@ import core_values from '../assets/images/about/core_values.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './about.css';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
-import { Navigation, Pagination,Autoplay, EffectCoverflow } from 'swiper/modules';
+import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
 
 // import { motion } from 'framer-motion';
 // import { fadeIn } from '../variants';
@@ -200,7 +200,7 @@ const About = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
-              modules={[Navigation,Autoplay, Pagination]}
+              modules={[Navigation, Autoplay, Pagination]}
               navigation={{
                 prevEl: '.swiper-button-prev',
                 nextEl: '.swiper-button-next',
@@ -453,19 +453,20 @@ const About = () => {
 
           </Swiper>
         </div>
-
-        <hr className='h-[16px] bg-[#A4CA62] mt-20' />
       </div>
 
-      <div className='w-full mx-auto h-[50vh] md:h-screen relative'>
-        <img src={about_bg2} alt="" className='w-full h-full object-cover' />
-        <div className='absolute right-[50%] translate-x-1/2 md:-translate-x-0 md:right-[100px] top-[50px] xl:top-[100px] text-[#ffffff]'>
-          <hr data-aos='fade-left' data-aos-duration='1000' className='h-[5px] bg-[#A4CA62] border-none w-[300px]' />
-          <div data-aos='fade-left' data-aos-duration='1000' className='max-w-[500px] h-[150px] md:h-[180px] xl:h-[200px] bg-black/80 py-4 pl-8 pr-20 leading-none'>
-            <h1 className='text-[25px] md:text-[30px] xl:text-[40px] font-[700]'>Our warehouse</h1>
-            <p>can store up to</p>
-            <p className='text-[40px] md:text-[60px] xl:text-[70px] text-[#A4CA62] font-[700] py-2'>1000 kW</p>
-            <p className='text-right text-[15px] font-[700]'>of solar panels</p>
+      <div>
+        <hr className='h-[16px] bg-[#A4CA62] mt-20 max-w-7xl mx-auto' />
+        <div className='w-full h-[50vh] md:h-screen relative'>
+          <img src={about_bg2} alt="" className='w-full h-full object-cover' />
+          <div className='absolute right-[50%] translate-x-1/2 md:-translate-x-0 md:right-[100px] top-[50px] xl:top-[100px] text-[#ffffff]'>
+            <hr data-aos='fade-left' data-aos-duration='1000' className='h-[5px] bg-[#A4CA62] border-none w-[300px]' />
+            <div data-aos='fade-left' data-aos-duration='1000' className='max-w-[500px] h-[150px] md:h-[180px] xl:h-[200px] bg-black/80 py-4 pl-8 pr-20 leading-none'>
+              <h1 className='text-[25px] md:text-[30px] xl:text-[40px] font-[700]'>Our warehouse</h1>
+              <p>can store up to</p>
+              <p className='text-[40px] md:text-[60px] xl:text-[70px] text-[#A4CA62] font-[700] py-2'>1000 kW</p>
+              <p className='text-right text-[15px] font-[700]'>of solar panels</p>
+            </div>
           </div>
         </div>
       </div>
