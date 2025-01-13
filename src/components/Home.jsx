@@ -10,7 +10,7 @@ import { useLocation } from 'react-router-dom';
 const Home = () => {
     useEffect(() => {
         Aos.init({
-            offset: 100, 
+            offset: 10, 
             easing: 'ease-in-out',
             once: false,
         });
