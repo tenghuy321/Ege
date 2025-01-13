@@ -203,7 +203,7 @@ const Header = () => {
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/products" onClick={() => setIsOpen(false)}
                                         className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
-                                        Products
+                                        Products new
                                     </NavLink>
                                     <button onClick={() => setIsProductsDropdownOpen(!isProductsDropdownOpen)}
                                         className={`transition-transform duration-500`}
