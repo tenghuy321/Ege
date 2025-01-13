@@ -36,7 +36,7 @@ const Services = () => {
                   </p>
 
                   {visibleSections[1] && (
-                    <div className="pt-2">
+                    <div className="pt-2 overflow-hidden transition-all duration-500">
                       <p>Additional content for Service 1...</p>
                     </div>
                   )}
