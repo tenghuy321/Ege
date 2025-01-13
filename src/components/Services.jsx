@@ -56,7 +56,7 @@ const Services = () => {
                   <div className="flex flex-col items-start p-0 md:p-4 text-[#ffffff] text-[12px]" id="text-content">
                     <h1 className="text-[16px] md:text-[20px] lg:text-[25px] font-[700] leading-none h-auto md:h-[50px] lg:h-[30px]">{data.header}</h1>
                     <p
-                      className={`text-white text-[14px] font-[300] leading-5 ${visibleSections[id] ? "" : "line-clamp-2"
+                      className={`text-white text-[12px] md:text-[14px] font-[300] leading-5 ${visibleSections[id] ? "" : "line-clamp-2"
                         } transition-all duration-300`}
                     >
                       {data.description}
