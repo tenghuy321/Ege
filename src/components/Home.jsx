@@ -28,7 +28,7 @@ const Home = () => {
       }
     }, [hash]);
   return (
-    <section className="w-full bg-[#D9ECEE] h-[86.9vh] flex overflow-hidden z-10">
+    <section className="w-full bg-[#D9ECEE] min-h-screen 2xl:h-[86.9vh] flex overflow-hidden z-10">
       <div>
         <ButtonScroll />
       </div>
@@ -50,7 +50,7 @@ const Home = () => {
                 </div>
             </div>
             <div data-aos='fade-left' data-aos-duration='1500' className="mix-blend-darken md:col-span-7 flex items-center justify-center">
-                <img src={banner} alt="" className="mix-blend-darken w-full h-[650px] object-contain object-center flex items-center justify-center" />
+                <img src={banner} alt="" className="mix-blend-darken w-full h-auto 2xl:h-[650px] object-contain object-center flex items-center justify-center" />
             </div>
         </div>
     </section>
