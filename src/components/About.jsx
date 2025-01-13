@@ -1,9 +1,9 @@
 import Home from '../components/Home';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 import about_bg1 from '../assets/images/about/about-bg-1.png';
 import about_bg2 from '../assets/images/about/about-bg-2.png';
 import about_bg3 from '../assets/images/about/about-bg-3.png';
-import about_bg4 from '../assets/images/about/about-bg-4.png';
 import icon1 from '../assets/images/about/icon-1.png';
 import icon2 from '../assets/images/about/icon-2.png';
 import icon3 from '../assets/images/about/icon-3.png';
@@ -75,23 +75,23 @@ const About = () => {
       <div className='max-w-7xl mx-auto px-4'>
         <hr className='h-4 bg-[#A4CA62] border-none' />
         <div className='bg-[#415464F2] px-2 xl:px-10 py-6'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden'>
             <div data-aos='fade-right' data-aos-duration='1000' className='text-[20px] sm:text-[40px] lg:text-[50px] text-[#fff] font-[600] leading-none'>
               <h1 className='text-[#A4CA62]'>EGE Cambodia Energy </h1>
               <p>Solutions.</p>
             </div>
             <div className='flex flex-row space-x-2 items-center justify-end'>
-              <div data-aos='flip-up' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 px-1 lg:pl-2 lg:pr-10 bg-[#A4CA62] font-[700] leading-none text-[#415464]'>
+              <div data-aos='fade-left' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 px-1 lg:pl-2 lg:pr-10 bg-[#A4CA62] font-[700] leading-none text-[#415464]'>
                 <p className='text-[12px] lg:text-[20px]'>Founded in</p>
                 <p className='text-[30px] lg:text-[50px]'>2019</p>
               </div>
-              <div data-aos='flip-up' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] lg:text-[15px] text-[#ffffff] bg-[#00AFD7]'>
+              <div data-aos='fade-left' data-aos-duration='1300' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] lg:text-[15px] text-[#ffffff] bg-[#00AFD7]'>
                 <p>our</p>
                 <p className='text-[12px] lg:text-[20px] font-[700]'>warehouse</p>
                 <p>can store up to of solar panels</p>
                 <p className='text-[12px] lg:text-[20px] font-[700]'>1000 kW</p>
               </div>
-              <div data-aos='flip-up' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] md:text-[11px] text-[#ffffff] bg-[#FF5900]'>
+              <div data-aos='fade-left' data-aos-duration='1600' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] md:text-[11px] text-[#ffffff] bg-[#FF5900]'>
                 <p>As we continue to grow, we have extended our footprint, not just within Phnom Penh but all over the country.</p>
               </div>
             </div>
@@ -480,17 +480,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* banner */}
-      <div className='w-full h-full relative mt-4'>
-        <img src={about_bg4} alt="" className='w-full h-full' />
-        <div className='absolute inset-0 w-full h-full bg-[#000000]/70 bg-blend-multiply'></div>
-        <div data-aos='fade-up' data-aos-duration='1200' className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
-          Innovation meets <br />
-          sustainability.
-        </div>
-      </div>
-
-
+      <Banner />
       <Footer />
     </section>
   )

@@ -28,27 +28,29 @@ const Home = () => {
       }
     }, [hash]);
   return (
-    <section className="w-full bg-[#D9ECEE] min-h-screen flex overflow-hidden z-10">
+    <section className="w-full bg-[#D9ECEE] h-[86.9vh] flex overflow-hidden z-10">
       <div>
         <ButtonScroll />
       </div>
         <div className="container mx-auto px-4 xl:px-10 grid grid-cols-1 md:grid-cols-12 md:gap-4 items-center justify-center">
-            <div data-aos='fade-right' data-aos-duration='1000' className="md:col-span-5">
-                <div className="flex items-end">
-                    <hr className="w-2 h-20 md:h-40 mx-auto bg-[#A4CA62] border-0" />
-                    <div className="bg-[#415464] w-full px-8 lg:px-10 py-4">
+            <div className="md:col-span-5">
+                <div className="flex items-end overflow-hidden">
+                    <hr data-aos='fade-left' data-aos-duration='1000' className="w-2 h-20 md:h-40 mx-auto bg-[#A4CA62] border-0" />
+                    <div className="bg-[#415464] w-full px-8 lg:px-10 py-4" data-aos='fade-left' data-aos-duration='1500'>
+                      <div data-aos='fade-left' data-aos-duration='2000'>
                         <p className="text-[25px] xl:text-[30px] font-[700] text-[#ffffff]">Welcome to</p>
                         <p className="text-[#A4CA62] text-[25px] lg:text-[40px] xl:text-[60px] font-[700] leading-none">EGE Cambodia Energy </p>
                         <p className="text-[#ffffff] text-[40px] xl:text-[60px] font-[700] leading-none">Solutions<span className="text-[#A4CA62]">.</span></p>
+                      </div>
                     </div>
                 </div>
-                <div className="px-8 lg:px-12 py-2 text-[25px] lg:text-[30px] xl:text-[40px] font-[400] leading-none">
+                <div data-aos='fade-left' data-aos-duration='2000' className="px-8 lg:px-12 py-2 text-[#415464] text-[25px] lg:text-[30px] xl:text-[40px] font-[400] leading-none">
                     Innovation meets
                     sustainability.
                 </div>
             </div>
-            <div data-aos='fade-left' data-aos-duration='1000' className="mix-blend-darken md:col-span-7 flex items-center justify-center">
-                <img src={banner} alt="" className="mix-blend-darken object-cover object-center flex items-center justify-center" />
+            <div data-aos='fade-left' data-aos-duration='1500' className="mix-blend-darken md:col-span-7 flex items-center justify-center">
+                <img src={banner} alt="" className="mix-blend-darken w-full h-[650px] object-contain object-center flex items-center justify-center" />
             </div>
         </div>
     </section>

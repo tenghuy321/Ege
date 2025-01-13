@@ -32,16 +32,9 @@ const Navbar = () => {
                 <li className="relative group">
                     <NavLink to='/services'  className={({isActive}) => `px-5 xl:px-7 py-4 xl:py-4 text-[16px] xl:text-[20px] text-[#415464] nav_link ${isActive ? 'active font-[600]' : ''}`}>Services</NavLink>
                     <ul className="absolute left-1/2 transform -translate-x-1/2 hidden mt-3 w-44 py-2 space-y-2 bg-[#415464] shadow-lg group-hover:block z-50">
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#consultant" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Consultant</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#feasibility" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Feasibility Studies</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#installation" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Installation</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#site_survey" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Site Survey</NavLink></li>
+                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#feasibility" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Feasibility Studies & Site Survey</NavLink></li>
                         <li className="hover:bg-[#2E4354]"><NavLink to="/services#project_management" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Project Management</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#maintenance" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Maintenance</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#pump" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Pump / Irrigation</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#solar_agriculture" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Solar Agriculture</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#solar_home" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Solar Home</NavLink></li>
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#solar_farm" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Solar Farm & Rooftop</NavLink></li>
+                        <li className="hover:bg-[#2E4354]"><NavLink to="/services#installation" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Installation & Maintenance</NavLink></li>
                     </ul>
                 </li>
                 <li className="relative group">

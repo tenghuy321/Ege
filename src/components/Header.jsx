@@ -244,16 +244,9 @@ const Header = () => {
                                     ${isServicesDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Consultant</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Feasibility Studies</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Installation</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Site Survey</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Project Management</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Maintenance</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Pump / Irrigation</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Agriculture</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Home</NavLink></li>
-                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Farm & Rooftop</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#feasibility" className="mt-1 text-[14px] text-[#415464]">Feasibility Studies & Site Survey</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#project_management" className="mt-1 text-[14px] text-[#415464]">Project Management</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/services#installation" className="mt-1 text-[14px] text-[#415464]">Installation & Maintenance</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>

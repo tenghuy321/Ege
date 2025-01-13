@@ -1,5 +1,6 @@
 import Home from './Home';
 import Footer from '../components/Footer';
+import Banner from '../components/Banner';
 
 import activity1 from '../assets/images/projects/activity/activity-1.png';
 import activity2 from '../assets/images/projects/activity/activity-2.png';
@@ -18,6 +19,18 @@ import project5 from '../assets/images/projects/project-5.png';
 import project6 from '../assets/images/projects/project-6.png';
 import project7 from '../assets/images/projects/project-7.png';
 import project8 from '../assets/images/projects/project-8.png';
+import project9 from '../assets/images/projects/project-9.png';
+import project10 from '../assets/images/projects/project-10.png';
+import project11 from '../assets/images/projects/project-11.png';
+import project12 from '../assets/images/projects/project-12.png';
+import project13 from '../assets/images/projects/project-13.png';
+import project14 from '../assets/images/projects/project-14.png';
+import project15 from '../assets/images/projects/project-15.png';
+import project16 from '../assets/images/projects/project-16.png';
+import project17 from '../assets/images/projects/project-17.png';
+import project18 from '../assets/images/projects/project-18.png';
+import project19 from '../assets/images/projects/project-19.png';
+import project20 from '../assets/images/projects/project-20.png';
 
 import client1 from '../assets/images/projects/client/client-1.png';
 import client2 from '../assets/images/projects/client/client-2.png';
@@ -66,7 +79,6 @@ import icons3 from '../assets/images/projects/icons/icon-3.png';
 import icons4 from '../assets/images/projects/icons/icon-4.png';
 import icons5 from '../assets/images/projects/icons/icon-5.png';
 
-import about_bg4 from '../assets/images/about/about-bg-4.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import '../components/project.css';
@@ -94,10 +106,9 @@ const activity = [
     header: 'Installation Project',
     title: '',
     des: {
-      Project: 'Sahmakum Teang Tnaut Organization (STT)',
+      Project: 'Feasibility Study-Mondulkiri Province. In June 2022, EGE Cambodia has selected as consult and service supplier on site survey and feasibility reports for Cambodian Rural Development Team (CRDT)',
       'Scope of work': 'Supply and Install solar street light 35 sets for community',
-      Date: 'August 2024',
-      Location: 'Kandal Province'
+      'Project Feasibility Study': 'Implementation of Solar Energy Water Pump System in Mondulkiri Province.'
     },
     image: activity4
   },
@@ -105,14 +116,21 @@ const activity = [
     header: 'Feasibility Study-Mondulkiri Province',
     title: 'Site Installation',
     des: {
-      Project: "Feasibility Study-Mondulkiri Province In June 2022, EGE Cambodia has selected as consult and service",
+      Project: 'Live Learn Cambodia',
+      'Scope of work': 'Solar Water Pump System Upgrade & Supply',
+      Location: 'Steung Trent Province',
+      Year: '2022 & 2023'
     },
     image: activity5
   },
   {
     header: 'Feasibility Study-Siem Reap Province',
     title: '',
-    des: 'Report assessment of Design and Installation of Solar Pump Irrigation System.',
+    des: {
+      ' ': 'Report assessment of Design and Installation of Solar Pump Irrigation System.',
+      '': 'Location of the assignment: Sambour commune of Kralanh district in Siem Reap province.',
+      'Supply to' : 'Live and Learn Cambodia'
+    },
     image: activity6
   },
   {
@@ -133,10 +151,19 @@ const project = [
   {
     image: project1,
     des: {
-      Project: 'Sahmakum Teang Tnaut Organization (STT)',
+      Project: 'Water Treatment Plant',
       'Scope of Work': 'National Water Supply Authority 50KW',
       Location: 'Kampot Province',
       Year: '2021'
+    }
+  },
+  {
+    image: project9,
+    des: {
+      Project: 'Water Treatment Plant',
+      'Scope of Work': '340W & 20KW Polycrystalline Solar Panels',
+      Location: 'Banteay Meanchey Province',
+      Year: 'April 2023'
     }
   },
   {
@@ -149,6 +176,15 @@ const project = [
     }
   },
   {
+    image: project10,
+    des: {
+      Project: 'Rooftop Ice Factory',
+      'Scope of Work': '200KW & 450W Monocrystalline Solar Panels',
+      Location: 'Battambang Province',
+      Year: '2022'
+    }
+  },
+  {
     image: project3,
     des: {
       Project: 'Cambodia Programme for Sustainable and Inclusive Growth in the Fisheries Sector & Capture Component (Capfish Capture)',
@@ -158,21 +194,12 @@ const project = [
     }
   },
   {
-    image: project4,
-    des: {
-      Project: 'Oral District Resort',
-      'Scope of Work': '15KW Off-grid Solar Light',
-      Location: 'Kampong Speu Province',
-      Year: '2022'
-    }
-  },
-  {
     image: project5,
     des: {
       Project: 'Solar Rooftop for Amaru Rice Warehouse',
       'Scope of Work': '90KWP Off-grid Hybrid Solar PV System ,“Eco Green Energy” Monocrystalline Solar PV of 550W',
       Location: 'Phnom Penh',
-      Year: '2023'
+      Year: 'November 2023'
     }
   },
   {
@@ -180,7 +207,14 @@ const project = [
     des: {
       Project: 'Solar System',
       'Scope of Work': 'Monocrystalline  Module 450W',
-      Location: '',
+      Year: '2022'
+    }
+  },
+  {
+    image: project11,
+    des: {
+      Project: 'Solar System',
+      'Scope of Work': 'Polycrystalline Module 340W',
       Year: '2022'
     }
   },
@@ -193,11 +227,96 @@ const project = [
     }
   },
   {
+    image: project12,
+    des: {
+      Project: 'Villas Siem Reap',
+      'Scope of Work': '10KW Terrace Top Off-grid Hybrid',
+      Location: 'Siem Reap Province',
+    }
+  },
+  {
+    image: project13,
+    des: {
+      Project: 'Villas Phnom Penh',
+      'Scope of Work': '10KW Rooftop On-grid',
+      Location: 'Phnom Penh',
+    }
+  },
+  {
+    image: project14,
+    des: {
+      Project: 'Eco Village',
+      'Scope of Work': '10KW Off-grid Rooftop',
+      Location: 'Kampot Province',
+    }
+  },
+  {
+    image: project15,
+    des: {
+      Project: 'Solar Irrigation',
+      'Scope of Work': 'Pepper Plantation, Kampot & Logan Plantation, Battambang',
+      Location: 'Kampot & Battambang Provinces',
+    }
+  },
+  {
+    image: project16,
+    des: {
+      Project: 'Farming',
+      'Scope of Work': 'Goat, Turkey, Chicken Farm & Fish Farm',
+      Location: 'Kampong Speu & Kampong Cham Provinces',
+    }
+  },
+  {
+    image: project4,
+    des: {
+      Project: 'Oral District Resort',
+      'Scope of Work': '15KW Off-grid Solar Light',
+      Location: 'Kampong Speu Province',
+      Year: '2022'
+    }
+  },
+  {
     image: project8,
     des: {
       Project: 'Oral District Resort',
       'Scope of Work': '200 Solar Light',
       Location: 'Kampong Speu Province',
+      Year: '2022'
+    }
+  },
+  {
+    image: project17,
+    des: {
+      Project: 'Solar Irrigation 2022',
+      'Scope of Work': '5Hp of Solar Water Pump System for Fish Farm',
+      Location: 'Kampong Cham Province',
+      Year: '2022'
+    }
+  },
+  {
+    image: project18,
+    des: {
+      Project: 'Solar Irrigation 2023',
+      'Scope of Work': '5Hp of Solar Irrigation System',
+      Location: 'Banteay Meanchey Province',
+      Year: '2023'
+    }
+  },
+  {
+    image: project19,
+    des: {
+      Project: 'Sahmakum Teang Tnaut Organizational (STT)',
+      'Scope of Work': '35 Sets of Solar Street Light Supply & Installation for Community',
+      Location: 'Kandal Province',
+      Year: 'August 2024'
+    }
+  },
+  {
+    image: project20,
+    des: {
+      Project: 'Cambodia Climate Change Alliance - Phase3 (CCCA-lll)',
+      'Scope of Work': '340W Polycrystalline Solar Panels',
+      Location: '20 Health Centers & Water Stations in 3 Provinces, Cambodia',
       Year: '2022'
     }
   },
@@ -405,7 +524,7 @@ const Project = () => {
         <div className='hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4'>
           {project.map((projects, index) => (
             <div data-aos='fade-right' data-aos-duration='1200' key={index}>
-              <img src={projects.image} alt="" className='w-full h-auto' />
+              <img src={projects.image} alt="" className='w-full h-[200px]' />
               <hr className='h-2 bg-[#A4CA62] border-none' />
               <div className='bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]'>
                 {Object.entries(projects.des).map(([key, value]) => (
@@ -539,15 +658,7 @@ const Project = () => {
       </div>
 
       {/* banner */}
-      <div className='w-full h-full relative mt-4'>
-        <img src={about_bg4} alt="" className='w-full h-full' />
-        <div className='absolute inset-0 w-full h-full bg-[#000000]/70 bg-blend-multiply'></div>
-        <div data-aos='fade-up' data-aos-duration='1200' className='absolute inset-0 w-full h-full flex items-center text-center justify-center text-[30px] sm:text-[50px] md:text-[60px] lg:text-[100px] leading-none text-[#ffffff] font-[700] italic'>
-          Innovation meets <br />
-          sustainability.
-        </div>
-      </div>
-
+      <Banner />
 
       <Footer />
     </section>
