@@ -187,13 +187,13 @@ const Header = () => {
                                     ${isAboutDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#vision" className="mt-1 text-[14px] text-[#415464]">Vision</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#mission" className="mt-1 text-[14px] text-[#415464]">Mission</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#core_values" className="mt-1 text-[14px] text-[#415464]">Core Values</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#history" className="mt-1 text-[14px] text-[#415464]">Our History</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#management_team" className="mt-1 text-[14px] text-[#415464]">Management Team</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#registration_docs" className="mt-1 text-[14px] text-[#415464]">Registration Docs</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#certificate" className="mt-1 text-[14px] text-[#415464]">Certificate of Auth</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#vision" className="mt-1 text-[14px] text-[#415464]">Vision</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#mission" className="mt-1 text-[14px] text-[#415464]">Mission</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#core_values" className="mt-1 text-[14px] text-[#415464]">Core Values</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#history" className="mt-1 text-[14px] text-[#415464]">Our History</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#management_team" className="mt-1 text-[14px] text-[#415464]">Management Team</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#registration_docs" className="mt-1 text-[14px] text-[#415464]">Registration Docs</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#certificate" className="mt-1 text-[14px] text-[#415464]">Certificate of Auth</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -218,8 +218,8 @@ const Header = () => {
                                     ${isProductsDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="/products#product" className="text-[14px] text-[#415464]">Products</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/products#reason" className="text-[14px] text-[#415464]">6 Reason to choose us</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/products#product" className="text-[14px] text-[#415464]">Products</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/products#reason" className="text-[14px] text-[#415464]">6 Reason to choose us</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -244,16 +244,16 @@ const Header = () => {
                                     ${isServicesDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Consultant</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Feasibility Studies</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Installation</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Site Survey</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Project Management</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Maintenance</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Pump / Irrigation</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Agriculture</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Home</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="#" className="mt-1 text-[14px] text-[#415464]">Solar Farm & Rooftop</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Consultant</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Feasibility Studies</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Installation</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Site Survey</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Project Management</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Maintenance</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Pump / Irrigation</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Agriculture</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Home</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="#" className="mt-1 text-[14px] text-[#415464]">Solar Farm & Rooftop</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -278,7 +278,7 @@ const Header = () => {
                                     ${isCareerDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="/career#careers" className="text-[14px] text-[#415464]">Careers</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/career#careers" className="text-[14px] text-[#415464]">Careers</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -310,8 +310,8 @@ const Header = () => {
                                     ${isProjectDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="/project#activities" className="text-[14px] text-[#415464]">Activities</a></li>
-                                            <li><a onClick={() => setIsOpen(false)} href="/project#project" className="text-[14px] text-[#415464]">Project Credentials</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/project#activities" className="text-[14px] text-[#415464]">Activities</NavLink></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/project#project" className="text-[14px] text-[#415464]">Project Credentials</NavLink></li>
                                         </ul>
                                     </div>
                                 </div>
