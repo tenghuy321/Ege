@@ -10,6 +10,9 @@ import activity5 from '../assets/images/projects/activity/activity-5.png';
 import activity6 from '../assets/images/projects/activity/activity-6.png';
 import activity7 from '../assets/images/projects/activity/activity-7.png';
 import activity8 from '../assets/images/projects/activity/activity-8.png';
+import activity9 from '../assets/images/projects/activity/activity-9.png';
+import activity10 from '../assets/images/projects/activity/activity-10.png';
+import activity11 from '../assets/images/projects/activity/activity-11.png';
 
 import project1 from '../assets/images/projects/project-1.png';
 import project2 from '../assets/images/projects/project-2.png';
@@ -106,9 +109,9 @@ const activity = [
     header: 'Installation Project',
     title: '',
     des: {
-      Project: 'Feasibility Study-Mondulkiri Province. In June 2022, EGE Cambodia has selected as consult and service supplier on site survey and feasibility reports for Cambodian Rural Development Team (CRDT)',
-      'Scope of work': 'Supply and Install solar street light 35 sets for community',
-      'Project Feasibility Study': 'Implementation of Solar Energy Water Pump System in Mondulkiri Province.'
+      'Project :': 'Feasibility Study-Mondulkiri Province. In June 2022, EGE Cambodia has selected as consult and service supplier on site survey and feasibility reports for Cambodian Rural Development Team (CRDT)',
+      'Scope of work :': 'Supply and Install solar street light 35 sets for community',
+      'Project Feasibility Study :': 'Implementation of Solar Energy Water Pump System in Mondulkiri Province.'
     },
     image: activity4
   },
@@ -116,10 +119,10 @@ const activity = [
     header: 'Feasibility Study-Mondulkiri Province',
     title: 'Site Installation',
     des: {
-      Project: 'Live Learn Cambodia',
-      'Scope of work': 'Solar Water Pump System Upgrade & Supply',
-      Location: 'Steung Trent Province',
-      Year: '2022 & 2023'
+      'Project :': 'Live Learn Cambodia',
+      'Scope of work :': 'Solar Water Pump System Upgrade & Supply',
+      'Location :': 'Steung Trent Province',
+      'Year :': '2022 & 2023'
     },
     image: activity5
   },
@@ -127,23 +130,41 @@ const activity = [
     header: 'Feasibility Study-Siem Reap Province',
     title: '',
     des: {
-      ' ': 'Report assessment of Design and Installation of Solar Pump Irrigation System.',
-      '': 'Location of the assignment: Sambour commune of Kralanh district in Siem Reap province.',
-      'Supply to' : 'Live and Learn Cambodia'
+      '': 'Report assessment of Design and Installation of Solar Pump Irrigation System.',
+      'Location of the assignment :': ' Sambour commune of Kralanh district in Siem Reap province.',
+      'Supply to :' : 'Live and Learn Cambodia'
     },
     image: activity6
   },
   {
+    header: 'Installation Project',
+    des: {
+      'Project :': 'Sahmakum Teang Tnaut Organization (STT)',
+      'Scope of work :': 'Supply and Install solar street light 35 sets for community',
+      'Date :': 'August 2024',
+      'Location :': 'Kandal Province',
+    },
+    image: activity9
+  },
+  {
     header: 'Installation Activities / team',
-    title: '',
     des: 'We offer quick installation with professional team within any regions of Cambodia.',
     image: activity7
   },
   {
     header: 'Some of Technical of Training, Operation, Maintenance',
-    title: '',
     des: 'Technical Training of Solar Water Pump for fish farm, Kampong Thom Province in 2022',
     image: activity8
+  },
+  {
+    header: 'Some of Technical of Training, Operation, Maintenance',
+    des: 'Technical Training of Off-grid and water pump for farmers in Takeo Province in 2023',
+    image: activity10
+  },
+  {
+    header: 'Some of Technical of Training, Operation, Maintenance',
+    des: 'Training community at Preah Vihear Province in 2024',
+    image: activity11
   },
 ]
 
@@ -456,7 +477,7 @@ const Project = () => {
               {activity.map((activities, index) => (
                 <div data-aos='flip-up' data-aos-duration='1200' key={index} className="relative group overflow-hidden">
                   <hr className='h-2 bg-[#A4CA62] border-none' />
-                  <img src={activities.image} alt="" className='w-full h-full object-cover' />
+                  <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
                   <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
                     <h1 className="text-[16px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                     <p className='text-[12px] font-[600] text-[#ffffff]'>{activities.title}</p>
@@ -466,7 +487,7 @@ const Project = () => {
                       ) : (
                         Object.entries(activities.des).map(([key, value]) => (
                           <div key={key} className="mb-2">
-                            <span>{key}:</span> {value}
+                            <span>{key}</span> {value}
                           </div>
                         ))
                       )}
@@ -492,7 +513,7 @@ const Project = () => {
                   <SwiperSlide key={index}>
                     <div className="relative group overflow-hidden">
                       <hr className='h-2 bg-[#A4CA62] border-none' />
-                      <img src={activities.image} alt="" className='w-full h-full object-cover' />
+                      <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
                       <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
                         <h1 className="text-[14px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                         <p className='text-[11px] font-[600] text-[#ffffff]'>{activities.title}</p>
