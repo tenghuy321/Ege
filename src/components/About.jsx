@@ -269,7 +269,7 @@ const About = () => {
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Head of BD & Co.Founder</p>
           </div>
         </div>
-        <div className='md:hidden swiper-management'>
+        <div id='management_team' className='md:hidden swiper-management'>
           {/* management team mobile */}
           <Swiper
             effect={'coverflow'}
@@ -309,7 +309,7 @@ const About = () => {
       </div>
 
       {/* certificate */}
-      <div className='hidden md:grid grid-cols-4 gap-6 px-4 items-center max-w-7xl mx-auto my-20'>
+      <div id='registration_docs' className='hidden md:grid grid-cols-4 gap-6 px-4 items-center max-w-7xl mx-auto my-20'>
         <div data-aos='fade-right' data-aos-duration='1000' className='md:col-span-2'>
           <img src={cert1} alt="" />
         </div>
@@ -380,7 +380,7 @@ const About = () => {
           ))}
         </div>
         {/* Awards & Accreditations mobile */}
-        <div className='md:hidden swiper-awards py-20'>
+        <div id='certificate' className='md:hidden swiper-awards py-20'>
           <Swiper
             effect="coverflow"
             grabCursor={true}
