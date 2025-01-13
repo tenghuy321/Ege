@@ -13,7 +13,7 @@ const Navbar = () => {
                 <li className="relative group">
                     <NavLink to='/about' className={({isActive}) => `px-5 xl:px-7 py-4 xl:py-4 text-[16px] xl:text-[20px] text-[#415464] nav_link ${isActive ? 'active font-[600]' : ''}`}>About Us</NavLink>
                     <ul className="absolute left-1/2 transform -translate-x-1/2 hidden mt-3 py-2 space-y-2 w-44 bg-[#415464] shadow-lg group-hover:block z-50">
-                        <li className="hover:bg-[#2E4354]"><a href="/about#vision" className="block px-2 text-[14px] text-[#ffffff]">Vision</a></li>
+                        <li className="hover:bg-[#2E4354]"><NavLink to="/about#vision" className="block px-2 text-[14px] text-[#ffffff]">Vision</NavLink></li>
                         <li className="hover:bg-[#2E4354]"><a href="/about#mission" className="block px-2 text-[14px] text-[#ffffff]">Mission</a></li>
                         <li className="hover:bg-[#2E4354]"><a href="/about#core_values" className="block px-2 text-[14px] text-[#ffffff]">Core Values</a></li>
                         <li className="hover:bg-[#2E4354]"><a href="/about#history" className="block px-2 text-[14px] text-[#ffffff]">Our History</a></li>
