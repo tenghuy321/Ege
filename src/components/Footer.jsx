@@ -54,7 +54,7 @@ const Footer = () => {
                     <path stroke="currentColor" strokeLinecap="round" strokeWidth="1.5" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" />
                   </svg>
                 </div>
-                <a href='#' className='p-[2px]'>info@egecambodia.com</a>
+                <a href='mailto:info@egecambodia.com' className='p-[2px]'>info@egecambodia.com</a>
               </div>
               <div className='flex items-start space-x-1'>
                 <div>
@@ -70,14 +70,14 @@ const Footer = () => {
           <div className='sm:col-span-4 md:col-span-4 lg:col-span-2'>
             <h1 className='text-[#A4CA62] text-[18px] font-[700]'>Follow Us</h1>
             <div className='flex space-x-2 pt-4'>
-              <a href="#" className='transition-all hover:scale-110 duration-200'>
+              <a href="https://www.facebook.com/share/1By1qNP5MY/?mibextid=wwXIfr" className='transition-all hover:scale-110 duration-200'>
                 <svg width="28" height="28" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M30 15C30 22.4871 24.5145 28.6928 17.3438 29.8178V19.3359H20.8389L21.5039 15H17.3438V12.1863C17.3438 10.9998 17.925 9.84375 19.7883 9.84375H21.6797V6.15234C21.6797 6.15234 19.9629 5.85938 18.3217 5.85938C14.8957 5.85938 12.6562 7.93594 12.6562 11.6953V15H8.84766V19.3359H12.6562V29.8178C5.48555 28.6928 0 22.4871 0 15C0 6.71602 6.71602 0 15 0C23.284 0 30 6.71602 30 15Z" fill="#415464" />
                   <path d="M20.8389 19.3359L21.5039 15H17.3438V12.1863C17.3438 11 17.9249 9.84375 19.7882 9.84375H21.6797V6.15234C21.6797 6.15234 19.9631 5.85938 18.322 5.85938C14.8956 5.85938 12.6562 7.93594 12.6562 11.6953V15H8.84766V19.3359H12.6562V29.8177C13.42 29.9375 14.2027 30 15 30C15.7973 30 16.58 29.9375 17.3438 29.8177V19.3359H20.8389Z" fill="white" />
                 </svg>
               </a>
 
-              <a href="#" className='transition-all hover:scale-110 duration-200'>
+              <a href="https://t.me/JAnRW9JVrnBiZTc9" className='transition-all hover:scale-110 duration-200'>
                 <svg width="28" height="28" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M15 30C23.2863 30 30 23.2863 30 15C30 6.71375 23.2863 0 15 0C6.71375 0 0 6.71375 0 15C0 23.2863 6.71375 30 15 30ZM6.86375 14.675L21.3263 9.09875C21.9975 8.85625 22.5837 9.2625 22.3662 10.2775L22.3675 10.2762L19.905 21.8775C19.7225 22.7 19.2337 22.9 18.55 22.5125L14.8 19.7487L12.9912 21.4913C12.7912 21.6913 12.6225 21.86 12.235 21.86L12.5013 18.0438L19.4513 11.765C19.7537 11.4987 19.3837 11.3488 18.985 11.6138L10.3963 17.0212L6.69375 15.8663C5.89 15.6112 5.8725 15.0625 6.86375 14.675Z" fill="#415464" />
                 </svg>
