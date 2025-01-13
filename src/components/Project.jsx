@@ -523,7 +523,7 @@ const Project = () => {
                           ) : (
                             Object.entries(activities.des).map(([key, value]) => (
                               <div key={key} className="mb-2">
-                                <span>{key}:</span> {value}
+                                <span>{key}</span> {value}
                               </div>
                             ))
                           )}
