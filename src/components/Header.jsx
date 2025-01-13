@@ -187,7 +187,7 @@ const Header = () => {
                                     ${isAboutDropdownOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}`}>
                                     <div className="ml-4 mt-2">
                                         <ul>
-                                            <li><a onClick={() => setIsOpen(false)} href="/about#vision" className="mt-1 text-[14px] text-[#415464]">Vision</a></li>
+                                            <li><NavLink onClick={() => setIsOpen(false)} to="/about#vision" className="mt-1 text-[14px] text-[#415464]">Vision</NavLink></li>
                                             <li><a onClick={() => setIsOpen(false)} href="/about#mission" className="mt-1 text-[14px] text-[#415464]">Mission</a></li>
                                             <li><a onClick={() => setIsOpen(false)} href="/about#core_values" className="mt-1 text-[14px] text-[#415464]">Core Values</a></li>
                                             <li><a onClick={() => setIsOpen(false)} href="/about#history" className="mt-1 text-[14px] text-[#415464]">Our History</a></li>
