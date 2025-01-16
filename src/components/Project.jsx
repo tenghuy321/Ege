@@ -65,6 +65,12 @@ import partner6 from '../assets/images/projects/partner/partner-6.png';
 import partner7 from '../assets/images/projects/partner/partner-7.png';
 import partner8 from '../assets/images/projects/partner/partner-8.png';
 import partner9 from '../assets/images/projects/partner/partner-9.png';
+import partner10 from '../assets/images/projects/partner/partner-10.png';
+import partner11 from '../assets/images/projects/partner/partner-11.png';
+import partner12 from '../assets/images/projects/partner/partner-12.png';
+import partner13 from '../assets/images/projects/partner/partner-13.png';
+import partner14 from '../assets/images/projects/partner/partner-14.png';
+import partner15 from '../assets/images/projects/partner/partner-15.png';
 
 import supply1 from '../assets/images/projects/supply/supply-1.png';
 import supply2 from '../assets/images/projects/supply/supply-2.png';
@@ -74,6 +80,7 @@ import supply5 from '../assets/images/projects/supply/supply-5.png';
 import supply6 from '../assets/images/projects/supply/supply-6.png';
 import supply7 from '../assets/images/projects/supply/supply-7.png';
 import supply8 from '../assets/images/projects/supply/supply-8.png';
+import supply9 from '../assets/images/projects/supply/supply-9.png';
 
 
 import icons1 from '../assets/images/projects/icons/icon-1.png';
@@ -431,6 +438,24 @@ const partner = [
   {
     image: partner9,
   },
+  {
+    image: partner10,
+  },
+  {
+    image: partner11,
+  },
+  {
+    image: partner12,
+  },
+  {
+    image: partner13,
+  },
+  {
+    image: partner14,
+  },
+  {
+    image: partner15,
+  },
 ]
 
 const supply = [
@@ -459,7 +484,7 @@ const supply = [
     image: supply8,
   },
   {
-    image: supply5,
+    image: supply9,
   },
 ]
 const Project = () => {

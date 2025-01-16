@@ -254,19 +254,19 @@ const About = () => {
         <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] my-10'>Our Management Team</h1>
         <div className='hidden md:grid grid-cols-3 gap-10 lg:gap-20'>
           <div data-aos='fade-up' data-aos-duration='1000' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
+            <img src={person3} alt="" className='w-full h-auto object-cover object-center' />
+            <h1 className='my-1'>Chanthida Vorn</h1>
+            <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Head of BD & Co-Founder</p>
+          </div>
+          <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <img src={person1} alt="" className='w-full h-auto object-cover object-center' />
             <h1 className='my-1'>Pascal Gizard</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Director & Co-founder</p>
           </div>
-          <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
+          <div data-aos='fade-up' data-aos-duration='1400' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <img src={person2} alt="" className='w-full h-auto object-cover object-center' />
             <h1 className='my-1'>Chanraksmey Vorn</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Founder & CEO</p>
-          </div>
-          <div data-aos='fade-up' data-aos-duration='1400' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-            <img src={person3} alt="" className='w-full h-auto object-cover object-center' />
-            <h1 className='my-1'>Chanthida Vorn</h1>
-            <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Head of BD & Co.Founder</p>
           </div>
         </div>
         <div id='management_team' className='md:hidden swiper-management'>
@@ -282,23 +282,23 @@ const About = () => {
           >
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person1} alt="" className='w-40 h-auto object-cover object-center' />
+                <img src={person1} alt="" className='w-52 h-auto object-cover object-center' />
                 <h1 className='my-1'>Pascal Gizard</h1>
-                <p className='bg-[#A4CA62] text-[#ffffff] p-2'>Director & Co-founder</p>
+                <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Director & Co-founder</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person2} alt="" className='w-40 h-auto object-cover object-center' />
+                <img src={person2} alt="" className='w-52 h-auto object-cover object-center' />
                 <h1 className='my-1'>Chanraksmey Vorn</h1>
-                <p className='bg-[#A4CA62] text-[#ffffff] p-2'>Founder & CEO</p>
+                <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Founder & CEO</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person3} alt="" className='w-40 h-auto object-cover object-center' />
+                <img src={person3} alt="" className='w-52 h-auto object-cover object-center' />
                 <h1 className='my-1'>Chanthida Vorn</h1>
-                <p className='bg-[#A4CA62] text-[#ffffff] p-2'>Head of BD & Co.Founder</p>
+                <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Head of BD & Co.Founder</p>
               </div>
             </SwiperSlide>
 

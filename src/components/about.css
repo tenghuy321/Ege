@@ -16,10 +16,15 @@
   padding-bottom: 2rem;
 }
 
-.swiper-management .swiper-slide{
+.swiper-management .swiper{
+  margin-inline: initial;
+  padding-bottom: 3rem;
+}
+
+/* .swiper-management .swiper-slide{
   width: 250px;
   height: 300px;
-}
+} */
 .swiper-history .swiper-button-prev::after,
 .swiper-history .swiper-button-next::after {
   content: "";
@@ -53,7 +58,7 @@
 
 .swiper-history .swiper-pagination .swiper-pagination-bullet {
   background-color: #a4ca62;
-  width: 10px;
+  width: 6px;
   height: 6px;
   border-radius: 50%;
   margin: 0 5px;
@@ -64,7 +69,7 @@
 .swiper-awards .swiper-pagination .swiper-pagination-bullet,
 .swiper-award .swiper-pagination-bullet{
   background-color: #2E4354;
-  width: 10px;
+  width: 6px;
   height: 6px;
   border-radius: 50%;
   margin: 0 5px;
@@ -73,6 +78,7 @@
 .swiper-history .swiper-pagination .swiper-pagination-bullet-active {
   width: 16px;
   height: 6px;
+  border-radius: 10px;
   background-color: #a4ca62;
 }
 
@@ -82,5 +88,6 @@
 .swiper-award .swiper-pagination-bullet-active{
   width: 16px;
   height: 6px;
+  border-radius: 10px;
   background-color: #2E4354;
 }
