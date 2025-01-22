@@ -49,8 +49,8 @@ const Navbar = () => {
                 <li className="relative group">
                     <NavLink to='/project'  className={({isActive}) => `px-5 xl:px-7 py-4 xl:py-4 text-[16px] xl:text-[20px] text-[#415464] nav_link ${isActive ? 'active font-[600]' : ''}`}>Projects</NavLink>
                     <ul className="absolute left-1/2 transform -translate-x-1/2 hidden mt-3 py-2 space-y-2 w-44 bg-[#415464] shadow-lg group-hover:block z-50">
-                        <li className="hover:bg-[#2E4354]"><NavLink to="/project#activities" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Activities</NavLink></li>
                         <li className="hover:bg-[#2E4354]"><NavLink to="/project#project" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Project Credentials</NavLink></li>
+                        <li className="hover:bg-[#2E4354]"><NavLink to="/project#activities" className={({isActive}) => `block px-2 text-[14px] text-[#ffffff] ${isActive ? 'text-[#ffffff]' : ''}`}>Activities</NavLink></li>
                     </ul>
                 </li>
                 <li>

@@ -139,7 +139,7 @@ const activity = [
     des: {
       '': 'Report assessment of Design and Installation of Solar Pump Irrigation System.',
       'Location of the assignment :': ' Sambour commune of Kralanh district in Siem Reap province.',
-      'Supply to :' : 'Live and Learn Cambodia'
+      'Supply to :': 'Live and Learn Cambodia'
     },
     image: activity6
   },
@@ -491,10 +491,64 @@ const Project = () => {
   return (
     <section >
       <Home />
+
+      {/* Project Credentials */}
+      <div  id='project' className='bg-[#D9ECEE]'>
+        <hr className='h-4 bg-[#A4CA62] border-none max-w-7xl mx-auto px-4' />
+        <div className='max-w-7xl mx-auto px-4 py-10'>
+          <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Project <br /> Credentials</h1>
+          {/* laptop */}
+          <div className='hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4'>
+            {project.map((projects, index) => (
+              <div data-aos='fade-right' data-aos-duration='1200' key={index}>
+                <img src={projects.image} alt="" className='w-full h-[200px]' />
+                <hr className='h-2 bg-[#A4CA62] border-none' />
+                <div className='bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]'>
+                  {Object.entries(projects.des).map(([key, value]) => (
+                    <div key={key} className="mb-2 leading-none text-[12px]">
+                      <span>{key}:</span> {value}
+                    </div>
+                  ))
+                  }
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* mobile */}
+          <div className='swiper-project md:hidden'>
+            <Swiper
+              effect={'coverflow'}
+              grabCursor={true}
+              centeredSlides={true}
+              slidesPerView='auto'
+              loop={true}
+              spaceBetween={'50'}
+              coverflowEffect={{ rotate: 0, stretch: 0, depth: 200, modifier: 1, slideShadows: false }}
+              pagination={true} modules={[Pagination, Autoplay, EffectCoverflow]}
+              autoplay
+            >
+              {project.map((projects, index) => (
+                <SwiperSlide key={index}>
+                  <img src={projects.image} alt="" className='w-full h-auto' />
+                  <hr className='h-2 bg-[#A4CA62] border-none' />
+                  <div className='bg-[#415464] text-[#ffffff] p-3 h-[150px]'>
+                    {Object.entries(projects.des).map(([key, value]) => (
+                      <div key={key} className="mb-2 leading-none text-[12px]">
+                        <span>{key}:</span> {value}
+                      </div>
+                    ))}
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </div>
+
       {/* activity */}
-      <div id='activities' className='bg-[#D9ECEE]'>
+      <div id='activities'>
         <div className="max-w-7xl mx-auto px-4">
-          <hr className='h-4 bg-[#A4CA62] border-none' />
           <div className='py-10 md:py-20'>
             <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Case <br /> Studies/Activities</h1>
             {/* laptop */}
@@ -503,7 +557,7 @@ const Project = () => {
                 <div data-aos='flip-up' data-aos-duration='1200' key={index} className="relative group overflow-hidden">
                   <hr className='h-2 bg-[#A4CA62] border-none' />
                   <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
-                  <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
+                  <div className='absolute bottom-0 left-0 pt-2 pb-4 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
                     <h1 className="text-[16px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                     <p className='text-[12px] font-[600] text-[#ffffff]'>{activities.title}</p>
                     <p className='text-[12px] text-[#ffffff]'>
@@ -539,7 +593,7 @@ const Project = () => {
                     <div className="relative group overflow-hidden">
                       <hr className='h-2 bg-[#A4CA62] border-none' />
                       <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
-                      <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
+                      <div className='absolute bottom-0 left-0 pt-2 pb-4 px-4 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
                         <h1 className="text-[14px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                         <p className='text-[11px] font-[600] text-[#ffffff]'>{activities.title}</p>
                         <p className='text-[11px] text-[#ffffff]'>
@@ -560,57 +614,6 @@ const Project = () => {
               </Swiper>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Project Credentials */}
-      <div id='project' className='max-w-7xl mx-auto px-4 py-10'>
-        <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Project <br /> Credentials</h1>
-        {/* laptop */}
-        <div className='hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4'>
-          {project.map((projects, index) => (
-            <div data-aos='fade-right' data-aos-duration='1200' key={index}>
-              <img src={projects.image} alt="" className='w-full h-[200px]' />
-              <hr className='h-2 bg-[#A4CA62] border-none' />
-              <div className='bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]'>
-                {Object.entries(projects.des).map(([key, value]) => (
-                  <div key={key} className="mb-2 leading-none text-[12px]">
-                    <span>{key}:</span> {value}
-                  </div>
-                ))
-                }
-              </div>
-            </div>
-          ))}
-        </div>
-
-        {/* mobile */}
-        <div className='swiper-project md:hidden'>
-          <Swiper
-            effect={'coverflow'}
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView='auto'
-            loop={true}
-            spaceBetween={'50'}
-            coverflowEffect={{ rotate: 0, stretch: 0, depth: 200, modifier: 1, slideShadows: false }}
-            pagination={true} modules={[Pagination, Autoplay, EffectCoverflow]}
-            autoplay
-          >
-            {project.map((projects, index) => (
-              <SwiperSlide key={index}>
-                <img src={projects.image} alt="" className='w-full h-auto' />
-                <hr className='h-2 bg-[#A4CA62] border-none' />
-                <div className='bg-[#415464] text-[#ffffff] p-3 h-[150px]'>
-                  {Object.entries(projects.des).map(([key, value]) => (
-                    <div key={key} className="mb-2 leading-none text-[12px]">
-                      <span>{key}:</span> {value}
-                    </div>
-                  ))}
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
         </div>
       </div>
 

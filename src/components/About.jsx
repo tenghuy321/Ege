@@ -255,7 +255,7 @@ const About = () => {
             <div className="relative group w-full">
               <img src={person2} alt="" className="w-full h-full object-cover" />
               <div
-                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-[#A4CA62] shadow-lg p-4 w-full h-[300px] rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500"
+                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500"
               >
                 <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">Chanraksmey&apos;s entrepreneurial spirit and extensive experience in the renewable energy sector make her an invaluable asset to EGE Cambodia. As the CEO and founder, she has positioned the company as a trusted solar energy distributor and developer. Her leadership and deep understanding of green energy solutions ensure that EGE&apos;s clients receive cost-effective, reliable, and impactful renewable energy solutions. Chanraksmey&apos;s multilingual skills and mentorship further strengthen EGE&apos;s ability to serve a diverse client base, driving both innovation and growth in Cambodia&apos;s energy sector.</p>
               </div>
@@ -267,7 +267,7 @@ const About = () => {
           <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <div className='relative group w-full'>
               <img src={person1} alt="" className='w-full h-full object-cover' />
-              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#A4CA62] shadow-lg p-4 w-full h-[300px] rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                 <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.</p>
               </div>
             </div>
@@ -277,7 +277,7 @@ const About = () => {
           <div data-aos='fade-up' data-aos-duration='1400' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <div className='relative group w-full'>
               <img src={person3} alt="" className='w-full h-full object-cover' />
-              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#A4CA62] shadow-lg p-4 w-full h-[300px] rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                 <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.</p>
               </div>
             </div>
@@ -300,7 +300,7 @@ const About = () => {
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
                   <img src={person1} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full h-[220px] sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.</p>
                   </div>
                 </div>
@@ -312,7 +312,7 @@ const About = () => {
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
                   <img src={person2} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full h-[220px] sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">Chanraksmey&apos;s entrepreneurial spirit and extensive experience in the renewable energy sector make her an invaluable asset to EGE Cambodia. As the CEO and founder, she has positioned the company as a trusted solar energy distributor and developer. Her leadership and deep understanding of green energy solutions ensure that EGE&apos;s clients receive cost-effective, reliable, and impactful renewable energy solutions. Chanraksmey&apos;s multilingual skills and mentorship further strengthen EGE&apos;s ability to serve a diverse client base, driving both innovation and growth in Cambodia&apos;s energy sector.</p>
                   </div>
                 </div>
@@ -324,7 +324,7 @@ const About = () => {
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
                   <img src={person3} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full h-[220px] sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.</p>
                   </div>
                 </div>
