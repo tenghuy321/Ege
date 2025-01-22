@@ -190,7 +190,7 @@ const Products = () => {
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">05</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600] leading-none">Highly Experienced Team with Over 15 Years of Expertise</h1>
+                <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600] leading-none">Highly Experienced Team with More Than 20 Years of Expertise</h1>
                 <p>Our team boasts extensive experience, with each member contributing over 15 years of expertise to deliver top-notch solutions and support.</p>
               </div>
             </div>
