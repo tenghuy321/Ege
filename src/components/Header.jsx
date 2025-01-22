@@ -256,7 +256,7 @@ const Header = () => {
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/career" onClick={() => setIsOpen(false)}
                                         className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
-                                        Career
+                                        Careers
                                     </NavLink>
                                     <button onClick={() => setIsCareerDropdownOpen(!isCareerDropdownOpen)}
                                         className={`transition-transform duration-500`}
@@ -288,7 +288,7 @@ const Header = () => {
                                 <div className="flex items-center justify-between w-full">
                                     <NavLink to="/project" onClick={() => setIsOpen(false)}
                                         className={({ isActive }) => isActive ? "text-[#415464] font-bold" : "text-[#415464]"}>
-                                        Project
+                                        Projects
                                     </NavLink>
                                     <button onClick={() => setIsProjectDropdownOpen(!isProjectDropdownOpen)}
                                         className={`transition-transform duration-500`}
@@ -321,8 +321,6 @@ const Header = () => {
                         </ul>
                     </Drawer.Items>
                 </Drawer>
-
-
             </div>
 
             <section className="w-full bg-[#D9ECEE] hidden lg:block">

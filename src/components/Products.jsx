@@ -11,7 +11,7 @@ import products5 from '../assets/images/products/products-5.png';
 import products6 from '../assets/images/products/products-6.png';
 import products7 from '../assets/images/products/products-7.png';
 import products8 from '../assets/images/products/products-8.png';
-import products9 from '../assets/images/products/products-9.png';
+// import products9 from '../assets/images/products/products-9.png';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
@@ -44,9 +44,9 @@ const products = [
   {
     image: products8
   },
-  {
-    image: products9
-  },
+  // {
+  //   image: products9
+  // },
 ]
 
 const Products = () => {
@@ -62,7 +62,7 @@ const Products = () => {
             <p className="text-[14px] md:text-[16px] text-[#ffffff]">We supply the following <br />
               products  </p>
           </div>
-          <div className="hidden md:grid grid-cols-3 gap-x-10 lg:gap-x-20 gap-y-10 pt-5 pb-20">
+          <div className="hidden md:grid grid-cols-4 gap-4 pt-5 pb-20">
             <div data-aos='fade-up' data-aos-duration='1000'>
               <img src={products1} alt="" className="w-full h-full" />
             </div>
@@ -93,9 +93,9 @@ const Products = () => {
               <img src={products8} alt="" className="w-full h-full" />
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1400'>
+            {/* <div data-aos='fade-up' data-aos-duration='1400'>
               <img src={products9} alt="" className="w-full h-full" />
-            </div>
+            </div> */}
           </div>
 
           <div className="sm:hidden swiper-products relative">
@@ -133,15 +133,15 @@ const Products = () => {
       {/* 6 reason to choose us */}
       <div id="reason" className="w-full relative my-10 bg-cover bg-center" style={{ backgroundImage: `url(${reasonBg})` }}>
         <div className="bg-[#2A4352]/90">
-          <div data-aos='fade-right' data-aos-duration='1000' className="w-full lg:w-[80%] xl:w-2/3 mr-auto p-6 md:px-24 py-6 text-start">
+          <div data-aos='fade-right' data-aos-duration='1000' className="w-full lg:w-[80%] xl:w-2/3 mr-auto p-4 md:px-24 py-6 text-start">
             <h1 className="text-[25px] md:text-[40px] lg:text-[50px] text-[#A4CA62] font-[700]">6 Reasons to choose us</h1>
-            <p className="text-[14px] md:text-[16px] text-[#ffffff]">We supply the following  products  </p>
+            <p className="text-[14px] md:text-[16px] text-[#ffffff]">Why We&#39;re the Right Partner for Your Success</p>
           </div>
         </div>
         {/* laptop */}
         <div className="hidden sm:block">
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">01</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
@@ -152,7 +152,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">Always Available in Stock</h1>
@@ -163,7 +163,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">03</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
@@ -174,7 +174,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">Packaged Price with Installation</h1>
@@ -185,18 +185,18 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">05</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
-                <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600] leading-none">Highly  Expertise Team with More Than 15 Years Experiences </h1>
+                <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600] leading-none">Highly Experienced Team with Over 15 Years of Expertise</h1>
                 <p>Our team boasts extensive experience, with each member contributing over 15 years of expertise to deliver top-notch solutions and support.</p>
               </div>
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[80%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">After Sales Service</h1>

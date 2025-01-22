@@ -38,11 +38,11 @@ import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/module
 
 
 const timeline = [
-  { year: "2019-2020", month: "SEPTEMBER", description: "We started to import solar panels French brand Eco Green Energy in Cambodia as sole distributor and supply solar equipment across 25 cities/provinces." },
-  { year: "2021", month: "JANUARY", description: "EGE Cambodia Official Registration. EGE delivered 21 projects." },
-  { year: "2022", month: "JANUARY", description: "Supply and distribution of solar solutions including consulting, EPC projects, and maintenance. EGE Delivered 23 projects." },
-  { year: "2023", month: "JANUARY", description: "EGE developed a solar irrigation system and supplied, installed for agriculture sectors across the regions. EGE delivered 28 projects." },
-  { year: "2024", month: "JANUARY", description: "Providing more than 10MW of solar in Cambodia within the year." },
+  { icon: icon1, year: "2019-2020", month: "SEPTEMBER", description: "EGE began importing Eco Green Energy solar panels, a leading French brand, as the sole distributor in Cambodia, supplying solar equipment across 25 cities and provinces." },
+  { icon: icon2, year: "2021", month: "JANUARY", description: "EGE Cambodia was officially registered and successfully delivered 21 projects." },
+  { icon: icon3, year: "2022", month: "JANUARY", description: "EGE provided solar solutions through supply, distribution, consulting, EPC projects, and maintenance, successfully delivering 23 projects." },
+  { icon: icon4, year: "2023", month: "JANUARY", description: "EGE developed solar irrigation systems, offering supply and installation services for the agricultural sector across multiple regions. EGE successfully delivered 28 projects in 2023." },
+  { icon: icon5, year: "2024", month: "JANUARY", description: "Delivered over 10MW of solar energy across Cambodia within the year." },
 ];
 
 const awards = [
@@ -97,36 +97,34 @@ const About = () => {
             </div>
           </div>
           <div data-aos='fade-right' data-aos-duration='1000' className='flex flex-col space-y-2 pt-3 text-[#ffffff] text-[12px] md:text-[15px]'>
-            <p>Founded in 2019 by a visionary trio passionate about addressing the persistent electricity challenges in the city, the three founders embarked on a journey to make a meaningful impact. Fueled by a collective frustration with frequent power cuts and insufficient electricity supply, our founders envisioned a company that not only resolves complaints but also pioneers a transformative shift towards sustainable energy solutions,which is solar panels. </p>
-            <p>Our commitment goes beyond mere products; we actively engage in studying projects, providing expert consultancy, and offering efficient project management solutions.</p>
-            <p>With a focus on both service and product excellence, we strive to contribute significantly to cost reduction while championing eco-friendly practices and the eradication of carbon emissions.</p>
-            <p>As we continue to grow, we have extended our footprint, not just within Phnom Penh but all over the country.</p>
-            <p>Join us on this journey towards a greener tomorrow.</p>
+            <p>In 2019, three visionaries came together to tackle Cambodia`s pressing energy challenges. Frustrated by frequent power outages and unreliable electricity, they envisioned a brighter future powered by sustainable energy. With this shared purpose, EGE Cambodia was born—founded on the belief that renewable energy, particularly solar, is key to transforming lives and communities.</p>
+            <p>From the start, the founders sought to go beyond simply providing solar panels. They built a company that offers comprehensive solutions—from expert consultancy and tailored project management to seamless installation and maintenance. Their goal was clear: to make reliable, eco-friendly energy accessible and affordable for all, from small businesses to agricultural enterprises.</p>
+            <p>Today, EGE Cambodia is a trusted leader in solar energy, delivering cost-effective solutions that reduce carbon emissions and empower communities across the country. Guided by the founders` vision, we continue to expand our impact, driving Cambodia toward a sustainable and energy-secure future.</p>
+            {/* <p>As we continue to grow, we have extended our footprint, not just within Phnom Penh but all over the country.</p>
+            <p>Join us on this journey towards a greener tomorrow.</p> */}
           </div>
         </div>
 
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 px-4 py-10'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 py-10'>
           {/* vision */}
-          <div id='vision' data-aos='fade-right' data-aos-duration='1500' className='flex flex-col md:flex-row items-start space-x-0 md:space-x-5 lg:space-x-10 text-[13px] lg:text-[15px] text-[#415464] p-5 lg:p-10'>
-            <img src={vision} alt="" className='w-16 lg:w-20' />
-            <div>
-              <h1 className='text-[30px] lg:text-[50px] font-[700]'>Vision</h1>
-              <p>Our vision is to lead the shift to sustainable energy by offering innovative, accessible, and reliable solar solutions that empower individuals and communities</p>
+          <div id='vision' data-aos='fade-right' data-aos-duration='1500' className=''>
+            <hr className='h-4 border-none bg-[#ffffff]' />
+            <div className='flex flex-col md:flex-row items-start space-x-0 md:space-x-5 lg:space-x-10 text-[13px] lg:text-[15px] text-[#415464] p-5 lg:p-8'>
+              <img src={vision} alt="" className='w-16 lg:w-20' />
+              <div>
+                <h1 className='text-[30px] lg:text-[50px] font-[700]'>Vision</h1>
+                <p>Our vision is to lead the transition to sustainable energy by providing innovative, reliable, and accessible solar solutions. We strive to create a future where individuals and communities thrive with clean, affordable energy.</p>
+              </div>
             </div>
           </div>
           {/* mission */}
           <div id='mission' data-aos='fade-left' data-aos-duration='1500' className='bg-[#415464]'>
-            <hr className='h-4 bg-[#A4CA62]' />
-            <div className='flex flex-col md:flex-row items-start space-x-0 md:space-x-5 lg:space-x-10 text-[13px] lg:text-[15px] text-[#ffffff] p-5 lg:p-10'>
+            <hr className='h-4 border-none bg-[#A4CA62]' />
+            <div className='flex flex-col md:flex-row items-start space-x-0 md:space-x-5 lg:space-x-10 text-[13px] lg:text-[15px] text-[#ffffff] p-5 lg:p-8'>
               <img src={mission} alt="" className='w-16 lg:w-20' />
               <div>
                 <h1 className='text-[30px] lg:text-[50px] text-[#A4CA62] font-[700]'>Mission</h1>
-                <p>We are dedicated to empowering Phnom Penh and beyond
-                  with innovative solar technologies, offering comprehensive
-                  services from installation to maintenance. Our commitment
-                  lies in fostering a brighter, eco-friendly future through accessible,
-                  affordable, clean and efficient solar energy solutions, which is also aligned with SDG number 7.
-                </p>
+                <p>We are committed to empowering Phnom Penh and beyond with innovative solar technologies. Through comprehensive services—from installation to maintenance—we provide clean, affordable, and efficient energy solutions, aligned with Sustainable Development Goal (SDG) 7.</p>
               </div>
             </div>
           </div>
@@ -163,25 +161,25 @@ const About = () => {
         </div>
       </div>
 
-      <div id='history' className='w-full relative min-h-screen my-10'>
-        <img src={about_bg1} alt="" className='w-full min-h-screen object-cover object-center' />
+      <div id='history' className='w-full relative min-h-screen my-10 bg-cover' style={{ backgroundImage: `url(${about_bg1})` }}>
+        {/* <img src={about_bg1} alt="" className='w-full min-h-screen object-cover object-center' /> */}
         <div className='absolute inset-0 w-full h-full bg-[#415464] opacity-90'></div>
-        <div className='absolute inset-0 w-full h-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center md:items-start justify-center p-4 md:px-10 py-10'>
+        <div className='w-full h-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center md:items-start justify-center p-4 md:px-10 py-10'>
           <div className='flex flex-col text-center md:text-start space-y-1 md:space-y-20'>
             <h1 data-aos='fade-right' data-aos-duration='1000' className='w-full md:max-w-[300px] text-[30px] md:text-[40px] xl:text-[60px] font-bold text-[#ffffff] leading-none'>
               Our History
             </h1>
             <p data-aos='fade-right' data-aos-duration='1200' className='w-full md:max-w-[300px] text-[20px] md:text-[30px] xl:text-[40px] font-bold text-[#ffffff]'>
-              <span className='text-[#A4CA62]'>Our Strength</span> We focus on quality, products, services, and after sale.
+              <span className='text-[#A4CA62]'>Our Strengths</span> We focus on quality, products, services, and after sale.
             </p>
           </div>
 
           {/* history labtop */}
           <div className='hidden md:col-span-2 md:flex flex-col space-y-4 md:space-y-7 '>
-            {[icon1, icon2, icon3, icon4, icon5].map((icon, index) => (
+            {timeline.map((timelines, index) => (
               <div key={index} className='relative opacity-10 hover:opacity-100 hover:scale-105 transition-all duration-500'>
                 <div data-aos='fade-left' data-aos-duration='1000' className='flex flex-col md:flex-row md:space-x-4 items-center px-4'>
-                  <img src={icon} alt={`Icon ${index + 1}`} className='w-20' />
+                  <img src={timelines.icon} alt={`Icon ${index + 1}`} className='w-20' />
                   <div className='w-full'>
                     <div className='flex items-center justify-between'>
                       <h1 className='text-[20px] xl:text-[30px] font-bold text-[#ffffff]'>{timeline[index].year}</h1>
@@ -212,11 +210,11 @@ const About = () => {
               loop={true}
               autoplay
             >
-              {[icon1, icon2, icon3, icon4, icon5].map((icon, index) => (
+              {timeline.map((timelines, index) => (
                 <SwiperSlide key={index}>
                   <div className='relative transition-all duration-500'>
                     <div className='flex flex-col md:flex-row md:space-x-4 items-center px-4'>
-                      <img src={icon} alt="" className='w-20 h-[85px]' />
+                      <img src={timelines.icon} alt="" className='w-20 h-[85px]' />
                       <div className='w-full'>
                         <div className='flex items-center justify-between'>
                           <h1 className='text-[20px] xl:text-[30px] font-bold text-[#ffffff]'>
@@ -254,17 +252,35 @@ const About = () => {
         <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] my-10'>Our Management Team</h1>
         <div className='hidden md:grid grid-cols-3 gap-10 lg:gap-20'>
           <div data-aos='fade-up' data-aos-duration='1000' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-            <img src={person2} alt="" className='w-full h-auto object-cover object-center' />
+            <div className="relative group w-full">
+              <img src={person2} alt="" className="w-full h-full object-cover" />
+              <div
+                className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  bg-white shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500"
+              >
+                <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+              </div>
+            </div>
+
             <h1 className='mt-3 mb-2'>Chanraksmey Vorn</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Founder & CEO</p>
           </div>
           <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-            <img src={person1} alt="" className='w-full h-auto object-cover object-center' />
+            <div className='relative group w-full'>
+              <img src={person1} alt="" className='w-full h-full object-cover' />
+              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+              </div>
+            </div>
             <h1 className='mt-3 mb-2'>Pascal Gizard</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Director & Co-founder</p>
           </div>
           <div data-aos='fade-up' data-aos-duration='1400' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-            <img src={person3} alt="" className='w-full h-auto object-cover object-center' />
+            <div className='relative group w-full'>
+              <img src={person3} alt="" className='w-full h-full object-cover' />
+              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+              </div>
+            </div>
             <h1 className='mt-3 mb-2'>Chanthida Vorn</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Head of BD & Co-Founder</p>
           </div>
@@ -282,21 +298,36 @@ const About = () => {
           >
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person1} alt="" className='w-52 h-auto object-cover object-center' />
+                <div className='relative group w-1/2 h-1/2'>
+                  <img src={person2} alt="" className='w-full h-full object-cover' />
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                    <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+                  </div>
+                </div>
                 <h1 className='mt-3 mb-1'>Pascal Gizard</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Director & Co-founder</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person2} alt="" className='w-52 h-auto object-cover object-center' />
+                <div className='relative group w-1/2 h-1/2'>
+                  <img src={person1} alt="" className='w-full h-full object-cover' />
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                    <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+                  </div>
+                </div>
                 <h1 className='mt-3 mb-1'>Chanraksmey Vorn</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Founder & CEO</p>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-                <img src={person3} alt="" className='w-52 h-auto object-cover object-center' />
+                <div className='relative group w-1/2 h-1/2'>
+                  <img src={person3} alt="" className='w-full h-full object-cover' />
+                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white w-full sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                    <p className="text-black text-[12px] lg:text-[14px] font-[500]">Pascal brings over 20 years of experience in solar energy and leads the strategic vision of EGE Cambodia&apos;s projects.</p>
+                  </div>
+                </div>
                 <h1 className='mt-3 mb-1'>Chanthida Vorn</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Head of BD & Co.Founder</p>
               </div>
@@ -361,7 +392,10 @@ const About = () => {
 
       {/* Awards & Accreditations */}
       <div className='max-w-7xl mx-auto px-4'>
-        <h1 className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] my-10 leading-none'>Awards & <br /> Accreditations</h1>
+        <div className='my-10'>
+          <h1 className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none'>Awards & <br /> Accreditations</h1>
+          <p className='text-[12px] md:text-[16px] font-[500] md:max-w-[600px]'>Our industry recognition underscores our dedication to delivering reliable, eco-friendly energy solutions.</p>
+        </div>
         {/* Awards & Accreditations labtop */}
         <div id='certificate' className='hidden md:grid grid-cols-5 gap-10'>
           {awards.map((award, index) => (
