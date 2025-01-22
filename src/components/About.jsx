@@ -32,6 +32,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import './about.css';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from "react-icons/md";
 import { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper/modules';
+import { useState } from 'react';
 
 // import { motion } from 'framer-motion';
 // import { fadeIn } from '../variants';
@@ -69,6 +70,21 @@ const awards = [
 ];
 
 const About = () => {
+
+  // State to manage which popup is open
+  const [activePopup, setActivePopup] = useState(null);
+
+  // Function to open a specific popup
+  const openPopup = (popupId) => {
+    setActivePopup(popupId);
+  };
+
+  // Function to close the active popup
+  const closePopup = () => {
+    setActivePopup(null);
+  };
+
+
   return (
     <section className='overflow-hidden'>
       <Home />
@@ -251,35 +267,35 @@ const About = () => {
       <div id='management_team' className='max-w-7xl mx-auto px-4'>
         <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] my-10'>Our Management Team</h1>
         <div className='hidden md:grid grid-cols-3 gap-10 lg:gap-20'>
+        <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
+            <div className='relative group w-full'>
+              <img src={person1} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup1")} />
+              {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.</p>
+              </div> */}
+            </div>
+            <h1 className='mt-3 mb-2'>Pascal Gizard</h1>
+            <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Director & Co-founder</p>
+          </div>
           <div data-aos='fade-up' data-aos-duration='1000' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <div className="relative group w-full">
-              <img src={person2} alt="" className="w-full h-full object-cover" />
-              <div
+              <img src={person2} alt="" className="w-full h-full object-cover cursor-pointer" onClick={() => openPopup("popup2")} />
+              {/* <div
                 className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500"
               >
                 <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">Chanraksmey&apos;s entrepreneurial spirit and extensive experience in the renewable energy sector make her an invaluable asset to EGE Cambodia. As the CEO and founder, she has positioned the company as a trusted solar energy distributor and developer. Her leadership and deep understanding of green energy solutions ensure that EGE&apos;s clients receive cost-effective, reliable, and impactful renewable energy solutions. Chanraksmey&apos;s multilingual skills and mentorship further strengthen EGE&apos;s ability to serve a diverse client base, driving both innovation and growth in Cambodia&apos;s energy sector.</p>
-              </div>
+              </div> */}
             </div>
 
             <h1 className='mt-3 mb-2'>Chanraksmey Vorn</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Founder & CEO</p>
           </div>
-          <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
-            <div className='relative group w-full'>
-              <img src={person1} alt="" className='w-full h-full object-cover' />
-              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
-                <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.</p>
-              </div>
-            </div>
-            <h1 className='mt-3 mb-2'>Pascal Gizard</h1>
-            <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Director & Co-founder</p>
-          </div>
           <div data-aos='fade-up' data-aos-duration='1400' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <div className='relative group w-full'>
-              <img src={person3} alt="" className='w-full h-full object-cover' />
-              <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+              <img src={person3} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup3")} />
+              {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                 <p className="text-[#415464] text-[11px] lg:text-[12px] font-[400]">As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.</p>
-              </div>
+              </div> */}
             </div>
             <h1 className='mt-3 mb-2'>Chanthida Vorn</h1>
             <p className='bg-[#A4CA62] text-[#ffffff] py-1'>Head of BD & Co-Founder</p>
@@ -299,10 +315,10 @@ const About = () => {
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
-                  <img src={person1} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <img src={person1} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup1")} />
+                  {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.</p>
-                  </div>
+                  </div> */}
                 </div>
                 <h1 className='mt-3 mb-1'>Pascal Gizard</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Director & Co-founder</p>
@@ -311,10 +327,10 @@ const About = () => {
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
-                  <img src={person2} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <img src={person2} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup2")} />
+                  {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">Chanraksmey&apos;s entrepreneurial spirit and extensive experience in the renewable energy sector make her an invaluable asset to EGE Cambodia. As the CEO and founder, she has positioned the company as a trusted solar energy distributor and developer. Her leadership and deep understanding of green energy solutions ensure that EGE&apos;s clients receive cost-effective, reliable, and impactful renewable energy solutions. Chanraksmey&apos;s multilingual skills and mentorship further strengthen EGE&apos;s ability to serve a diverse client base, driving both innovation and growth in Cambodia&apos;s energy sector.</p>
-                  </div>
+                  </div> */}
                 </div>
                 <h1 className='mt-3 mb-1'>Chanraksmey Vorn</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Founder & CEO</p>
@@ -323,10 +339,10 @@ const About = () => {
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
-                  <img src={person3} alt="" className='w-full h-full object-cover' />
-                  <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
+                  <img src={person3} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup3")}/>
+                  {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.</p>
-                  </div>
+                  </div> */}
                 </div>
                 <h1 className='mt-3 mb-1'>Chanthida Vorn</h1>
                 <p className='w-[80%] sm:w-[60%] bg-[#A4CA62] text-[#ffffff] p-2'>Head of BD & Co.Founder</p>
@@ -337,6 +353,55 @@ const About = () => {
 
           </Swiper>
         </div>
+
+        {/* Popups */}
+        {activePopup === "popup1" && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100] px-2">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-start max-w-md mx-auto">
+              <p className="text-[10px] md:text-[12px] font-[500] text-[#415464] mb-4">
+                Pascal&apos;s extensive experience in project management, electrical systems, and solar energy is a cornerstone of EGE Cambodia&apos;s ability to deliver high-quality, sustainable energy solutions. As Director, his leadership and expertise in commissioning and MEP ensure that EGE&apos;s projects are executed with precision and efficiency. Clients benefit from Pascal&apos;s deep technical knowledge and strategic oversight, which enable them to maximize the performance and longevity of their energy systems. His background in both Southeast Asia and China gives him a unique perspective that enhances EGE&apos;s ability to meet the diverse needs of clients across the region.
+              </p>
+              <button
+                className="bg-[#a4ca62] text-[10px] md:text-[12px] text-[#415464] px-4 py-1 md:py-2 rounded-md shadow-md"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activePopup === "popup2" && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100] px-2">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-start max-w-md mx-auto">
+              <p className="text-[10px] md:text-[12px] font-[500] text-[#415464] mb-4">
+                Chanraksmey&apos;s entrepreneurial spirit and extensive experience in the renewable energy sector make her an invaluable asset to EGE Cambodia. As the CEO and founder, she has positioned the company as a trusted solar energy distributor and developer. Her leadership and deep understanding of green energy solutions ensure that EGE&apos;s clients receive cost-effective, reliable, and impactful renewable energy solutions. Chanraksmey&apos;s multilingual skills and mentorship further strengthen EGE&apos;s ability to serve a diverse client base, driving both innovation and growth in Cambodia&apos;s energy sector.
+              </p>
+              <button
+                className="bg-[#a4ca62] text-[10px] md:text-[12px] text-[#415464] px-4 py-1 md:py-2 rounded-md shadow-md"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
+
+        {activePopup === "popup3" && (
+          <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100] px-2">
+            <div className="bg-white rounded-lg shadow-lg p-6 text-start max-w-md mx-auto">
+              <p className="text-[10px] md:text-[12px] font-[500] text-[#415464] mb-4">
+                As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.
+              </p>
+              <button
+                className="bg-[#a4ca62] text-[10px] md:text-[12px] text-[#415464] px-4 py-1 md:py-2 rounded-md shadow-md"
+                onClick={closePopup}
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
       {/* certificate */}
