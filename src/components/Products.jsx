@@ -21,28 +21,44 @@ import Footer from "./Footer";
 
 const products = [
   {
-    image: products1
+    image: products1,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products2
+    image: products2,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products3
+    image: products3,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products4
+    image: products4,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products5
+    image: products5,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products6
+    image: products6,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products7
+    image: products7,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   {
-    image: products8
+    image: products8,
+    text: 'Key specs (wattage, efficiency).',
+    text1: 'Benefits and use cases.',
   },
   // {
   //   image: products9
@@ -62,35 +78,123 @@ const Products = () => {
             <p className="text-[14px] md:text-[16px] text-[#ffffff]">We supply the following <br />
               products  </p>
           </div>
-          <div className="hidden md:grid grid-cols-4 gap-4 pt-5 pb-20">
-            <div data-aos='fade-up' data-aos-duration='1000'>
+          <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-4 gap-4 pt-5 pb-20">
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products1} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div data-aos='fade-up' data-aos-duration='1200'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products2} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div data-aos='fade-up' data-aos-duration='1400'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
               <img src={products3} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1000'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products4} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1200'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products5} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1400'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
               <img src={products6} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1000'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products7} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div data-aos='fade-up' data-aos-duration='1200'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products8} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* <div data-aos='fade-up' data-aos-duration='1400'>
@@ -113,14 +217,25 @@ const Products = () => {
                 slideShadows: false,
               }}
               pagination={{ clickable: true }}
-              modules={[EffectCoverflow,Autoplay, Pagination]}
+              modules={[EffectCoverflow, Autoplay, Pagination]}
               autoplay
               style={{ width: '80%', height: 'auto', margin: 'auto' }}
             >
 
               {products.map((product, index) => (
-                <SwiperSlide key={index}>
+                <SwiperSlide key={index} className="group relative">
                   <img src={product.image} alt="" className="w-full h-full" />
+                  <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                    <div className="flex flex-col space-y-2">
+                        <p>{product.text}</p>
+                        <p>{product.text1}</p>
+                        <div className="pt-2">
+                            <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                                Request a Quote
+                            </a>
+                        </div>
+                    </div>
+                  </div>
                 </SwiperSlide>
               ))}
               <div className="swiper-pagination"></div>
@@ -141,7 +256,7 @@ const Products = () => {
         {/* laptop */}
         <div className="hidden sm:block">
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start"
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">01</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
@@ -152,7 +267,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end"
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">Always Available in Stock</h1>
@@ -163,7 +278,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start"
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">03</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
@@ -174,7 +289,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end"
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">Packaged Price with Installation</h1>
@@ -185,7 +300,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#415464]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 mr-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-start"
               data-aos='fade-right' data-aos-duration='1200'>
               <h1 className="text-[80px] sm:text-[100px] md:text-[150px] text-[#A4CA62] font-[700] leading-none tracking-tighter">05</h1>
               <hr className="h-[6rem] md:h-[9rem] w-1 md:w-[6px] bg-[#ffffff]" />
@@ -196,7 +311,7 @@ const Products = () => {
             </div>
           </div>
           <div className="bg-[#2A4352]/90">
-            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end" 
+            <div className="w-full lg:w-[90%] xl:w-2/3 ml-auto px-4 md:px-20 py-6 flex items-center space-x-2 sm:space-x-4 text-end"
               data-aos='fade-left' data-aos-duration='1200'>
               <div className="text-[#ffffff] text-[10px] sm:text-[12px] md:text-[14px] lg:text-[16px]">
                 <h1 className="text-[16px] md:text-[30px] xl:text-[40px] font-[600]">After Sales Service</h1>

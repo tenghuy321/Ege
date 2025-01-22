@@ -24,7 +24,6 @@ const Services = () => {
       number: '01',
       header: 'Feasibility Studies & Site Survey',
       description: 'We begin every project with a thorough feasibility study and site survey to ensure optimal results. Our team evaluates the technical, environmental, and financial aspects of implementing solar solutions. By analyzing factors such as sunlight availability, site conditions, and energy requirements, we design a customized plan to maximize ensures that your solar investment is practical, sustainable, and impactful.',
-      colSpan: 1,
       link: 'feasibility'
     },
     {
@@ -32,7 +31,6 @@ const Services = () => {
       number: '02',
       header: 'Project Management',
       description: 'Effective project management is at the core of our operations. From planning to execution, our experienced project managers oversee every phase of your solar project. We coordinate with all stakeholders, manage timelines, and ensure compliance with industry standards and regulations. Our goal is to deliver a seamless process, on time and within budget, while maintaining the highest levels of quality and professionalism.',
-      colSpan: 1,
       link: 'project_management'
     },
     {
@@ -40,8 +38,14 @@ const Services = () => {
       number: '03',
       header: 'Installation and Maintenance',
       description: 'Our installation services are designed to provide hassle-free and precise implementation of solar energy systems. Using state-of-the-art equipment and industry best practices, our skilled technicians ensure that your solar panels, inverters, and other components are installed efficiently and securely. Beyond installation, we offer reliable maintenance services to ensure your system performs optimally over its lifespan, minimizing downtime and maximizing energy output.',
-      colSpan: 2,
       link: 'installation'
+    },
+    {
+      image: service3,
+      number: '04',
+      header: 'Cleaning and Maintenance',
+      description: 'Our installation services are designed to provide hassle-free and precise implementation of solar energy systems. Using state-of-the-art equipment and industry best practices, our skilled technicians ensure that your solar panels, inverters, and other components are installed efficiently and securely. Beyond installation, we offer reliable maintenance services to ensure your system performs optimally over its lifespan, minimizing downtime and maximizing energy output.',
+      link: 'cleaning'
     },
   ]
   return (
@@ -53,8 +57,8 @@ const Services = () => {
           <h1 data-aos='fade-right' data-aos-duration='1000' className="text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700]">Our Services</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {cardsData.map((data, id) => (
-              <div id={data.link} key={data.id} className={`${data.colSpan === 2 ? "col-span-1 lg:col-span-2" : "col-span-1"}`} data-aos='fade-right' data-aos-duration='1200'>
-                <img src={data.image} alt="Service 1" className="w-full h-[200px] lg:h-auto object-cover" />
+              <div id={data.link} key={data.id} data-aos='fade-right' data-aos-duration='1200'>
+                <img src={data.image} alt="Service 1" className="w-full h-[200px] lg:h-[300px] object-cover" />
                 <div className="flex flex-col md:flex-row items-start bg-[#415464] py-2 px-6 leading-none">
                   <h1 className="text-[80px] lg:text-[100px] font-[700] text-[#ffffff] p-0 m-0 leading-none tracking-tight">{data.number}</h1>
                   <div className="flex flex-col items-start p-0 md:p-4 text-[#ffffff] text-[12px]" id="text-content">
