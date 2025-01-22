@@ -97,18 +97,25 @@ const About = () => {
               <p>Solutions.</p>
             </div>
             <div className='flex flex-row space-x-2 items-center justify-end'>
-              <div data-aos='fade-left' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 px-1 lg:pl-2 lg:pr-10 bg-[#A4CA62] font-[700] leading-none text-[#415464]'>
-                <p className='text-[12px] lg:text-[20px]'>Founded in</p>
-                <p className='text-[30px] lg:text-[50px]'>2019</p>
+              <div data-aos='fade-left' data-aos-duration='1000' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 px-1 lg:pl-2 lg:pr-10 bg-[#A4CA62] text-[#415464]'>
+                {/* <p className='text-[12px] lg:text-[20px]'>Founded in</p>
+                <p className='text-[30px] lg:text-[50px]'>2019</p> */}
+                <p className="text-[12px] lg:text-[20px] font-[700]">xx tons </p>
+                <p className='text-[10px] lg:text-[12px]'>of carbon emissions reduced annually</p>
               </div>
               <div data-aos='fade-left' data-aos-duration='1300' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] lg:text-[15px] text-[#ffffff] bg-[#00AFD7]'>
-                <p>our</p>
+                {/* <p>our</p>
                 <p className='text-[12px] lg:text-[20px] font-[700]'>warehouse</p>
                 <p>can store up to of solar panels</p>
-                <p className='text-[12px] lg:text-[20px] font-[700]'>1000 kW</p>
+                <p className='text-[12px] lg:text-[20px] font-[700]'>1000 kW</p> */}
+                <p className="text-[12px] lg:text-[20px] font-[700]">98% system</p>
+                <p className='text-[10px] lg:text-[12px]'>uptime for reliable </p>
+                <p className='text-[10px] lg:text-[12px]'>energy solutions</p>
               </div>
               <div data-aos='fade-left' data-aos-duration='1600' className='w-full md:w-[200px] h-[150px] lg:h-[200px] pt-2 pb-20 px-2 lg:pl-2 lg:pr-10 font-[400] text-[10px] md:text-[11px] text-[#ffffff] bg-[#FF5900]'>
-                <p>As we continue to grow, we have extended our footprint, not just within Phnom Penh but all over the country.</p>
+                {/* <p>As we continue to grow, we have extended our footprint, not just within Phnom Penh but all over the country.</p> */}
+                <p className="text-[12px] lg:text-[20px] font-[700]">45 - 90%</p>
+                <p className='text-[10px] lg:text-[12px]'>savings on energy costs </p>
               </div>
             </div>
           </div>
@@ -267,7 +274,7 @@ const About = () => {
       <div id='management_team' className='max-w-7xl mx-auto px-4'>
         <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] my-10'>Our Management Team</h1>
         <div className='hidden md:grid grid-cols-3 gap-10 lg:gap-20'>
-        <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
+          <div data-aos='fade-up' data-aos-duration='1200' className='text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
             <div className='relative group w-full'>
               <img src={person1} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup1")} />
               {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-start bg-[#A4CA62] shadow-lg p-4 w-full rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
@@ -339,7 +346,7 @@ const About = () => {
             <SwiperSlide>
               <div className='flex flex-col items-center justify-center text-center md:text-[15px] lg:text-[20px] font-[700] text-[#415464]'>
                 <div className='relative group w-1/2 h-1/2'>
-                  <img src={person3} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup3")}/>
+                  <img src={person3} alt="" className='w-full h-full object-cover cursor-pointer' onClick={() => openPopup("popup3")} />
                   {/* <div className='fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#a4ca62] w-full text-start sm:w-1/2 shadow-lg p-4 rounded-lg opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-500'>
                     <p className="text-[#415464] text-[10px] font-[400]">As a passionate leader in the renewable energy sector, Chanthida brings a wealth of knowledge and a commitment to driving sustainable change. Her expertise in innovative energy solutions has significantly contributed to EGE Cambodia&apos;s success in advancing renewable projects. By fostering growth and collaborating with diverse stakeholders, Thida ensures that EGE&apos;s solutions are efficient and impactful, helping clients navigate the evolving energy landscape to achieve long-term sustainability.</p>
                   </div> */}
