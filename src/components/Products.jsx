@@ -81,12 +81,12 @@ const Products = () => {
           <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-4 gap-4 pt-5 pb-20">
             <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products1} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -95,12 +95,12 @@ const Products = () => {
             </div>
             <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products2} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -109,12 +109,27 @@ const Products = () => {
             </div>
             <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
               <img src={products3} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
+                      Request a Quote
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1600'>
+              <img src={products4} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
+                <div className="flex flex-col space-y-2">
+                  <p>Key specs (wattage, efficiency).</p>
+                  <p>Benefits and use cases.</p>
+                  <div className="pt-2">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -123,13 +138,13 @@ const Products = () => {
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
-              <img src={products4} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <img src={products5} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -138,13 +153,13 @@ const Products = () => {
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
-              <img src={products5} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <img src={products6} alt="" className="w-full h-full" />
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -153,28 +168,13 @@ const Products = () => {
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
-              <img src={products6} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products7} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -182,14 +182,14 @@ const Products = () => {
               </div>
             </div>
 
-            <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
+            <div className="relative group" data-aos='fade-up' data-aos-duration='1600'>
               <img src={products8} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                 <div className="flex flex-col space-y-2">
                   <p>Key specs (wattage, efficiency).</p>
                   <p>Benefits and use cases.</p>
                   <div className="pt-2">
-                    <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                       Request a Quote
                     </a>
                   </div>
@@ -225,12 +225,12 @@ const Products = () => {
               {products.map((product, index) => (
                 <SwiperSlide key={index} className="group relative">
                   <img src={product.image} alt="" className="w-full h-full" />
-                  <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-white text-black text-sm rounded duration-300 ease-in-out">
+                  <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
                     <div className="flex flex-col space-y-2">
                         <p>{product.text}</p>
                         <p>{product.text1}</p>
                         <div className="pt-2">
-                            <a href='#' className="bg-[#A4CA62] px-3 py-1 rounded-md w-2/3">
+                            <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
                                 Request a Quote
                             </a>
                         </div>
