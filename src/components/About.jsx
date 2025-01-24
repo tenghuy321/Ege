@@ -200,16 +200,17 @@ const About = () => {
           {/* history labtop */}
           <div className='hidden md:col-span-2 md:flex flex-col space-y-4 md:space-y-7 '>
             {timeline.map((timelines, index) => (
-              <div key={index} className='relative opacity-10 hover:opacity-100 hover:scale-105 transition-all duration-500'>
+              <div key={index} className={`relative transition-all duration-500 
+                ${index === 0 ? "text-[#f5f5f5]" : index === 1 ? 'text-[#e5e5e5]' : index === 1 ? 'text-[#e5e5e5]' : index === 2 ? 'text-[#d4d4d4]' : index === 3 ? 'text-[#c4c4c4]' : index === 4 ? 'text-[#b4b4b4]' : index === 5 ? 'text-[#a3a3a3]' : index === 6 ? 'text-[#939393]' : index === 7 ? 'text-[#828282]' : index === 8 ? 'text-[#737373]' : index === 8 ? 'text-[#626262]' : ''}`}>
                 <div data-aos='fade-left' data-aos-duration='1000' className='flex flex-col md:flex-row md:space-x-4 items-center px-4'>
                   <img src={timelines.icon} alt={`Icon ${index + 1}`} className='w-20' />
                   <div className='w-full'>
                     <div className='flex items-center justify-between'>
-                      <h1 className='text-[20px] xl:text-[30px] font-bold text-[#ffffff]'>{timeline[index].year}</h1>
-                      <h1 className='text-[20px] xl:text-[30px] font-bold text-[#A4CA62]'>{timeline[index].month}</h1>
+                      <h1 className='text-[20px] xl:text-[30px] font-bold'>{timeline[index].year}</h1>
+                      <h1 className='text-[20px] xl:text-[30px] font-bold'>{timeline[index].month}</h1>
                     </div>
                     <hr className='h-1 my-2 bg-[#A4CA62] border-none' />
-                    <p className='text-[12px] lg:text-[14px] text-[#ffffff]'>{timeline[index].description}</p>
+                    <p className='text-[12px] lg:text-[14px]'>{timeline[index].description}</p>
                   </div>
                 </div>
               </div>
@@ -472,13 +473,13 @@ const About = () => {
         <div id='certificate' className='hidden md:grid grid-cols-5 gap-10'>
           {awards.map((award, index) => (
             <div data-aos='fade-up' data-aos-duration='1200' key={index}>
-              <div className="flex flex-col items-center text-center w-full h-[150px] lg:h-[200px] xl:h-[250px] 2xl:h-[300px]">
+              <div className="flex flex-col items-center text-center w-full">
                 <img
                   src={award.image}
                   alt=''
-                  className="w-full h-full object-contain"
+                  className="w-full object-contain  h-[150px] lg:h-[200px] xl:h-[250px] 2xl:h-[300px]"
                 />
-                <p className="max-w-[200px] h-[100px] pt-7 text-[11px] lg:text-[13px] xl:text-[15px] text-[#415464] font-[500]">
+                <p className="max-w-[200px] h-[120px] pt-7 text-[11px] lg:text-[13px] xl:text-[15px] text-[#415464] font-[500]">
                   {award.title}
                 </p>
               </div>
@@ -526,7 +527,7 @@ const About = () => {
         </div>
 
 
-        <div className='hidden md:grid grid-cols-4 gap-4 mt-40'>
+        <div className='hidden md:grid grid-cols-4 gap-4 mt-20'>
           <img data-aos='fade-right' data-aos-duration='1000' src={awards6} alt="" />
           <img data-aos='fade-right' data-aos-duration='1200' src={awards7} alt="" />
           <img data-aos='fade-left' data-aos-duration='1000' src={awards8} alt="" />

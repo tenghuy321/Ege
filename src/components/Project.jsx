@@ -92,6 +92,7 @@ import icons5 from '../assets/images/projects/icons/icon-5.png';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Autoplay } from 'swiper/modules';
 import '../components/project.css';
+import { useState } from 'react';
 
 const activity = [
   {
@@ -488,31 +489,65 @@ const supply = [
   },
 ]
 const Project = () => {
+
+  const [drawerOpen, setDrawerOpen] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openDrawer = (project) => {
+    setSelectedProject(project);
+    setDrawerOpen(true);
+  };
+
+  const closeDrawer = () => {
+    setDrawerOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <section >
       <Home />
 
       {/* Project Credentials */}
-      <div  id='project' className='bg-[#D9ECEE]'>
+      <div id='project' className='bg-[#D9ECEE]'>
         <hr className='h-4 bg-[#A4CA62] border-none max-w-7xl mx-auto px-4' />
         <div className='max-w-7xl mx-auto px-4 py-10'>
           <h1 data-aos='fade-right' data-aos-duration='1000' className='text-[30px] md:text-[40px] lg:text-[50px] text-[#415464] font-[700] leading-none md:mb-4'>Project <br /> Credentials</h1>
           {/* laptop */}
-          <div className='hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4'>
-            {project.map((projects, index) => (
-              <div data-aos='fade-right' data-aos-duration='1200' key={index}>
-                <img src={projects.image} alt="" className='w-full h-[200px]' />
-                <hr className='h-2 bg-[#A4CA62] border-none' />
-                <div className='bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]'>
-                  {Object.entries(projects.des).map(([key, value]) => (
-                    <div key={key} className="mb-2 leading-none text-[12px]">
-                      <span>{key}:</span> {value}
-                    </div>
-                  ))
-                  }
+          <div>
+            {/* Project Grid */}
+            <div className="hidden md:grid grid-cols-3 lg:grid-cols-4 gap-4">
+              {project.map((projects, index) => (
+                <div
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  key={index}
+                  className="relative"
+                >
+                  <img
+                    src={projects.image}
+                    alt={projects.des.Project}
+                    className="w-full h-[200px] object-cover"
+                  />
+                  <hr className="h-2 bg-[#A4CA62] border-none" />
+                  <div className="bg-[#415464] text-[#ffffff] p-3 h-[170px] xl:h-[150px]">
+                    {Object.entries(projects.des).map(([key, value]) => (
+                      <div
+                        key={key}
+                        className="mb-2 leading-none text-[12px] line-clamp-1"
+                      >
+                        <span className="font-bold">{key}:</span> {value}
+                      </div>
+                    ))}
+                    <button
+                      onClick={() => openDrawer(projects)}
+                      className="absolute left-4 bottom-4 text-[12px] bg-[#A4CA62] rounded-md px-2 py-1 hover:text-[#415464]"
+                    >
+                      Details
+                    </button>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* mobile */}
@@ -529,20 +564,62 @@ const Project = () => {
               autoplay
             >
               {project.map((projects, index) => (
-                <SwiperSlide key={index}>
-                  <img src={projects.image} alt="" className='w-full h-auto' />
-                  <hr className='h-2 bg-[#A4CA62] border-none' />
-                  <div className='bg-[#415464] text-[#ffffff] p-3 h-[150px]'>
+                <SwiperSlide key={index} className=''>
+                  <img
+                    src={projects.image}
+                    alt={projects.des.Project}
+                    className="w-full h-auto object-cover"
+                  />
+                  <hr className="h-2 bg-[#A4CA62] border-none" />
+                  <div className="bg-[#415464] text-[#ffffff] p-3 h-[150px] relative">
                     {Object.entries(projects.des).map(([key, value]) => (
-                      <div key={key} className="mb-2 leading-none text-[12px]">
-                        <span>{key}:</span> {value}
+                      <div
+                        key={key}
+                        className="mb-2 leading-none text-[12px] line-clamp-1"
+                      >
+                        <span className="font-bold">{key}:</span> {value}
                       </div>
                     ))}
+                    <button
+                      onClick={() => openDrawer(projects)}
+                      className="absolute left-4 bottom-4 text-[12px] bg-[#A4CA62] rounded-md px-2 py-1 hover:text-[#415464]"
+                    >
+                      Details
+                    </button>
                   </div>
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
+
+          {/* Drawer */}
+          {drawerOpen && (
+            <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-end">
+              <div className="bg-[#A4CA62] w-[300px] md:w-[400px] h-full p-6 shadow-lg relative">
+                {/* Close Button */}
+                <button
+                  onClick={closeDrawer}
+                  className="absolute top-4 right-4 text-black"
+                >
+                  &times;
+                </button>
+
+                {/* Drawer Content */}
+                {selectedProject && (
+                  <div>
+                    <h2 className="text-xl font-bold mb-4">More Details</h2>
+                    <div className="text-sm space-y-2">
+                      {Object.entries(selectedProject.des).map(([key, value]) => (
+                        <div key={key}>
+                          <span className="font-bold">{key}:</span> {value}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
@@ -557,12 +634,12 @@ const Project = () => {
                 <div data-aos='flip-up' data-aos-duration='1200' key={index} className="relative group overflow-hidden">
                   <hr className='h-2 bg-[#A4CA62] border-none' />
                   <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
-                  <div className='absolute bottom-0 left-0 pt-2 pb-4 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
-                    <h1 className="text-[16px] text-[#A4CA62] font-[600]">{activities.header}</h1>
+                  <div className='absolute bottom-0 left-0 pt-2 pb-4 px-4 w-full h-[70%] translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
+                    <h1 className="text-[14px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                     <p className='text-[12px] font-[600] text-[#ffffff]'>{activities.title}</p>
-                    <p className='text-[12px] text-[#ffffff]'>
+                    <div className='text-[12px] text-[#ffffff]'>
                       {typeof activities.des === 'string' ? (
-                        <p>{activities.des}</p>
+                        <div>{activities.des}</div>
                       ) : (
                         Object.entries(activities.des).map(([key, value]) => (
                           <div key={key} className="mb-2">
@@ -570,7 +647,7 @@ const Project = () => {
                           </div>
                         ))
                       )}
-                    </p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -593,10 +670,10 @@ const Project = () => {
                     <div className="relative group overflow-hidden">
                       <hr className='h-2 bg-[#A4CA62] border-none' />
                       <img src={activities.image} alt="" className='w-full h-[300px] object-cover' />
-                      <div className='absolute bottom-0 left-0 pt-2 pb-4 px-4 w-full translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
+                      <div className='absolute bottom-0 left-0 pt-2 pb-4 px-2 w-full h-[70%] translate-y-full bg-black/80 group-hover:translate-y-0 duration-300 ease-in-out'>
                         <h1 className="text-[14px] text-[#A4CA62] font-[600]">{activities.header}</h1>
                         <p className='text-[11px] font-[600] text-[#ffffff]'>{activities.title}</p>
-                        <p className='text-[11px] text-[#ffffff]'>
+                        <div className='text-[11px] text-[#ffffff]'>
                           {typeof activities.des === 'string' ? (
                             <p>{activities.des}</p>
                           ) : (
@@ -606,7 +683,7 @@ const Project = () => {
                               </div>
                             ))
                           )}
-                        </p>
+                        </div>
                       </div>
                     </div>
                   </SwiperSlide>

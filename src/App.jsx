@@ -11,6 +11,8 @@ import Navbar from "./components/Navbar";
 import Events from "./components/Events";
 import { useEffect, useState } from "react";
 import Loading from "./components/Loading";
+import GetQuote from "./components/getQuote";
+import Schedule from "./components/Schedule";
 function App() {
 
   const [isLoading, setIsLoading] = useState(false);
@@ -43,6 +45,8 @@ function App() {
             <Route path="/events" element={<Events />}></Route>
             <Route path="/project" element={<Project />}></Route>
             <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/getquote" element={<GetQuote />} />
+            <Route path="/schedule" element={<Schedule />} />
           </Routes>
         </main>
       </div>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button, Drawer } from "flowbite-react";
 import Logo from "./logo"
 import { useEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 import logo from '../assets/images/logo.png';
 const Header = () => {
@@ -160,7 +160,7 @@ const Header = () => {
                         </button>
                     </div>
                     <hr className="h-1 bg-[#A3C962]" />
-                    <Drawer.Items className="p-4">
+                    <Drawer.Items className="z-[999]">
                         <ul className="flex flex-col items-start justify-start space-y-5 pt-6 p-5">
                             <li className="w-full">
                                 <NavLink to="/" onClick={() => setIsOpen(false)}
@@ -319,6 +319,11 @@ const Header = () => {
 
 
                         </ul>
+
+                        <div className="w-80 px-4 py-2 flex items-center justify-between text-[14px] fixed bottom-2">
+                            <Link to='/getquote' className="hover:text-[#A4CA62]">Get Quote</Link>
+                            <Link to='/schedule' className="hover:text-[#A4CA62]">Schedule a Consultation</Link>
+                        </div>
                     </Drawer.Items>
                 </Drawer>
             </div>

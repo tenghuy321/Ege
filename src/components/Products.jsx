@@ -22,43 +22,139 @@ import Footer from "./Footer";
 const products = [
   {
     image: products1,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products2,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products3,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products4,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products5,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products6,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products7,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   {
     image: products8,
-    text: 'Key specs (wattage, efficiency).',
-    text1: 'Benefits and use cases.',
+    text: [
+      {
+        title: "Key Specifications",
+        description: "Wattage, efficiency, compatibility, and lifespan"
+      },
+      {
+        title: "Benefits",
+        description: "Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses."
+      },
+      {
+        title: "Use Cases",
+        description: "Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps."
+      }
+    ]
   },
   // {
   //   image: products9
@@ -81,118 +177,86 @@ const Products = () => {
           <div className="hidden sm:grid sm:grid-cols-2 md:grid-cols-4 gap-4 pt-5 pb-20">
             <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products1} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
             <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products2} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
             <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
               <img src={products3} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1600'>
               <img src={products4} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1000'>
               <img src={products5} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1200'>
               <img src={products6} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1400'>
               <img src={products7} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
 
             <div className="relative group" data-aos='fade-up' data-aos-duration='1600'>
               <img src={products8} alt="" className="w-full h-full" />
-              <div className="absolute bottom-1/2 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
-                <div className="flex flex-col space-y-2">
-                  <p>Key specs (wattage, efficiency).</p>
-                  <p>Benefits and use cases.</p>
-                  <div className="pt-2">
-                    <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                      Request a Quote
-                    </a>
-                  </div>
+              <div className="absolute sm:bottom-1/2 md:bottom-2/3 left-1/2 transform w-[90%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#415464] text-sm rounded duration-300 ease-in-out z-50">
+                <div className="flex flex-col space-y-2 text-[10px]">
+                  <p><span className="font-[600]"> Key Specifications: </span> Wattage, efficiency, compatibility, and lifespan</p>
+                  <p><span className="font-[600]">Benefits: </span> Explain how the product solves specific problems, reduces costs, or improves efficiency for households or businesses.</p>
+                  <p><span className="font-[600]">Use Cases: </span> Perfect for small agri-businesses looking to cut energy costs by up to 80–100% by replacing diesel-powered pumps.</p>
                 </div>
               </div>
             </div>
@@ -225,15 +289,13 @@ const Products = () => {
               {products.map((product, index) => (
                 <SwiperSlide key={index} className="group relative">
                   <img src={product.image} alt="" className="w-full h-full" />
-                  <div className="absolute bottom-1/3 left-1/2 transform w-[90%] p-4 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out">
+                  <div className="absolute bottom-1/3 left-1/2 transform w-[100%] p-2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity bg-[#A4CA62] text-[#4B5D6C] text-sm rounded duration-300 ease-in-out z-50">
                     <div className="flex flex-col space-y-2">
-                        <p>{product.text}</p>
-                        <p>{product.text1}</p>
-                        <div className="pt-2">
-                            <a href='#' className="bg-[#D9ECEE] px-3 py-1 rounded-md w-2/3">
-                                Request a Quote
-                            </a>
+                      {product.text.map((detail, i) => (
+                        <div key={i}>
+                          <p><span className="font-[600]">{detail.title} :</span> {detail.description}</p>
                         </div>
+                      ))}
                     </div>
                   </div>
                 </SwiperSlide>
